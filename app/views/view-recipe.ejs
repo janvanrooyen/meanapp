@@ -1,0 +1,69 @@
+<!doctype html>
+<div ng-controller="RecipeViewController" ng-cloak>
+  <div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <h2>{{selected.title}}</h2>
+        </div>
+        <div class="col-lg-2">
+          <a class="btn btn-primary btn-lg button" ng-click="editRecipe(tabs[3])" href="/recipes">Edit</a>
+        </div>  
+        <div class="col-lg-4">
+          <button type="button" class="btn btn-warning btn-lg button" ng-click="showme= !showme">Chef's Notes   <span class="glyphicon glyphicon-menu-down"></span></button>
+          <div ng-click="showme= !showme">
+            <div ng-show="showme">
+              <div class="chef-notes">
+                <div class="chef-notes-content">{{selected.notes}}</div> 
+              </div>
+            </div>   
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <hr class="divider"></hr>
+        </div>
+      </div>
+    </div>
+    <div class="container form-group">
+      <label for="Ingredients"><h2>Ingredients</h2></label>
+      <div class="row">
+        <div ng-repeat="(y, x) in selected.ingredients track by $index">
+          <div class="col-md-6">
+            <div ng-class="{'has-success': stepIsActive0}" ng-click="stepIsActive0 = !stepIsActive0">
+              <div class="ingredient-list" set-focus="$index == focusIndex">{{x.value}}<span class="glyphicon glyphicon-ok ingredient-ok" ng-if="stepIsActive0"></span></div>
+            </div>
+          </div>
+        </div>
+      </div>      
+    </div>
+    <div class="container">
+      <h2>Steps</h2>
+      <div class="row">
+        <ol class="list-numbers recipe-directions__list">
+          <div ng-repeat="(y, x) in selected.steps track by $index">
+            <div class="container">
+              <li class="step" ng-class="{'finished': stepIsActive0}" ng-click="stepIsActive0 = !stepIsActive0"> 
+                <div class="ingredient-list" id="{{$id}}" set-focus="$index == focusIndex">{{x.value}}</div>
+              </li>
+            </div>
+          </div>
+        </ol>   
+      </div>
+    </div>
+    <div class="container form-group">
+      <label for="Keywords"><h2>Keywords</h2></label>
+        <div class="row">
+          <div ng-repeat="(y, x) in selected.keywords track by $index">
+            <div class="col-md-6">
+              <div ng-class="{'has-success': stepIsActive0}" ng-click="stepIsActive0 = !stepIsActive0">
+                <div class="ingredient-list" set-focus="$index == focusIndex">{{x.value}}<span class="glyphicon glyphicon-ok ingredient-ok" ng-if="stepIsActive0"></span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+  <!-- End ng-Repeat -->
+  </div>
+</div>

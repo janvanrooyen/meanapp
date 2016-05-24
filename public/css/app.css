@@ -1,0 +1,112 @@
+
+.divider {
+  height: .5em;
+  width:100%;
+  display:block; /* for use on default inline elements like span */
+  overflow: hidden;
+  background-color: #5CB85C;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.chef-notes {
+    width: 100%;
+    background-color: #F0AD4E;
+    border-color: #eea236;
+    border-radius: 5%; 
+    z-index: 1;
+    position: absolute;
+    right: 10px;
+}
+
+.chef-notes-content {
+    background: #fff;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5%;
+    font-size: 18px;
+    line-height: 1.3333333;
+    color: #333;
+    text-align: center;
+}
+
+.button {
+    margin-top: 20px;
+    width: 100%;
+}
+/* Playing with the list */
+
+ol.list-numbers {
+    counter-reset: item;
+}
+
+.recipe-directions__list li {
+    position: relative;
+    padding-bottom: 1rem;
+    float: left;
+    line-height: 24px;
+    width: 100%;
+}
+
+ol.list-numbers li:before {
+    content: counter(item) ". ";
+    counter-increment: item;
+    position: absolute;
+    margin: 0 0 0 -2.5em;
+    color: #fff;
+    background: #F0AD4E;
+}
+
+.recipe-directions__list li:before {
+    content: counter(item)!important;
+    counter-increment: item;
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    border: 1px solid #cfcfcf;
+    color: #cfcfcf;
+    font-size: 18px;
+}
+
+.recipe-directions__list li:before {
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.recipe-directions__list li.finished:before {
+    
+    background-color: #5CB85C;
+    border: 1px solid #cfcfcf;
+    content: "\2713" !important;
+}
+
+/*Ingredients */
+
+.ingredient-ok {
+    float:right;
+    color: #5CB85C;
+}
+
+.ingredient-list {
+    padding: 10px 16px;
+    font-size: 18px;
+    line-height: 1.3333333;
+    border-radius: 6px;
+    background-color: #fff;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+}
+
+.recipe-grid:hover{
+    background-color: #5BC0DE;
+    color: #fff;
+}
+
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+  display: none !important;
+}
