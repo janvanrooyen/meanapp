@@ -162,7 +162,7 @@ app.controller("FindRecipeController", ["$scope", "$rootScope", "$http", "tabCtr
           .error(function(data, status, headers, config) {
                alert(status);
               });
-       //Find Recipe Search Drop Down
+       //Find Recipe Search Drop Down 
     $scope.recipeSearch = [  //array that sets the drop down list
     {
       id: 'id-1',
