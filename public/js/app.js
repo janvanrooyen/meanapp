@@ -59,7 +59,7 @@ app.controller("RecipeViewController", ["$scope", "$rootScope", "tabCtrl", "curT
     // update recipe
 
     $scope.saveClient = function() {
-      var url = 'http://localhost:8081/recipedb/' + $scope.selected._id;
+      var url = 'http://localhost:80/recipedb/' + $scope.selected._id;
      
       $scope.message = {
         title: $scope.selected.title,
@@ -155,7 +155,7 @@ app.controller("RecipeViewController", ["$scope", "$rootScope", "tabCtrl", "curT
 app.controller("FindRecipeController", ["$scope", "$rootScope", "$http", "tabCtrl", "curTab",
   function ($scope, $rootScope, $http, tabCtrl, curTab) {
 
-    $http.get('http://localhost:8081/recipedb')
+    $http.get('http://localhost:80/recipedb')
           .success(function(data, status, headers, config) {
               $scope.messages = data;
               })  
@@ -214,7 +214,7 @@ app.controller("AddRecipeController", ["$scope", "$http", "tabCtrl", "curTab",
         notes: $scope.notes
       } 
 
-      $http.post('http://localhost:8081/recipedb', $scope.message)
+      $http.post('http://localhost:80/recipedb', $scope.message)
           .success(function(data, status, headers, config) {
               console.log("Succesfully written to the database" + " " + $scope.message);
               console.log($scope.message);

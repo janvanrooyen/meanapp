@@ -11,3 +11,4 @@
 //form errors
 //confirmation of submit
 
+//Configure NGINX
