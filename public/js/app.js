@@ -65,8 +65,8 @@ app.controller("RecipeViewController", ["$scope", "$rootScope", "tabCtrl", "curT
     };
 
     $scope.saveClient = function() {
-      //var url = 'http://www.janvanrooyen.com/recipedb/' + $scope.selected._id;
-     var url = 'http://localhost:8081/recipedb/' + $scope.selected._id;
+      var url = 'http://www.janvanrooyen.com/recipedb/' + $scope.selected._id;
+     //var url = 'http://localhost:8081/recipedb/' + $scope.selected._id;
       $scope.message = {
         title: $scope.selected.title,
         ingredients: $scope.selected.ingredients, 
@@ -166,8 +166,8 @@ app.controller("RecipeViewController", ["$scope", "$rootScope", "tabCtrl", "curT
 app.controller("FindRecipeController", ["$scope", "$rootScope", "$http", "tabCtrl", "curTab",
   function ($scope, $rootScope, $http, tabCtrl, curTab) {
 
-    //$http.get('http://www.janvanrooyen.com/recipedb')
-    $http.get('http://localhost:8081/recipedb')
+    $http.get('http://www.janvanrooyen.com/recipedb')
+    //$http.get('http://localhost:8081/recipedb')
           .success(function(data, status, headers, config) {
               $scope.messages = data;
               })  
@@ -226,8 +226,8 @@ app.controller("AddRecipeController", ["$scope", "$http", "tabCtrl", "curTab",
         notes: $scope.notes
       } 
 
-//      $http.post('http://www.janvanrooyen.com/recipedb', $scope.message)
-        $http.post('http://localhost:8081/recipedb', $scope.message)  
+        $http.post('http://www.janvanrooyen.com/recipedb', $scope.message)
+       // $http.post('http://localhost:8081/recipedb', $scope.message)  
           .success(function(data, status, headers, config) {
               console.log("Succesfully written to the database" + " " + $scope.message);
               console.log($scope.message);
