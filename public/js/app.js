@@ -59,7 +59,8 @@ app.controller("RecipeViewController", ["$scope", "$rootScope", "tabCtrl", "curT
     // update recipe
 
     $scope.deleteClient = function(){
-      var url = 'http://localhost:8081/recipedb/' + $scope.selected._id;
+      //var url = 'http://localhost:8081/recipedb/' + $scope.selected._id;
+      var url = 'http://www.janvanrooyen.com/recipedb/' + $scope.selected._id;
       $http.delete(url);
       $rootScope.currentTab = "/find-recipe";
     };
