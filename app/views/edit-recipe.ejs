@@ -4,14 +4,17 @@
   <form ng-submit="saveClient()">
   <div class="form-group">
     <div class="row">
-      <div class="col-lg-4">
+      <div class="col-lg-3">
         <label for="title"><h2>{{selected.title}}</h2></label>
       </div>
-      <div class="col-lg-6">
+      <div class="col-lg-5">
         </label><input type="text" class="form-control input-lg button" id="{{$id}}" name="Title" autofocus placeholder="Add a Title" ng-model="selected.title"> 
       </div>
       <div class="col-lg-2">
         <button type="submit" class="btn btn-primary button btn-lg">Submit</button>
+      </div>
+      <div class="col-lg-2">
+        <button type="button" class="btn btn-danger button btn-lg" ng-click="deleteClient()">Delete</button>
       </div>
     </div>
     <div class="row">

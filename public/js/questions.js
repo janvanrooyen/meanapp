@@ -1,4 +1,4 @@
-//Need to add validation logic to the form
+//Need to udpate validation logic to the form
 //Add userID to the Form
 //User Authentication
 //clean up controllers and move functions to services specifically the add-recipe controller 
@@ -9,6 +9,5 @@
 //use the same check mark for the steps on the view recipe page
 //add google analytics
 //form errors
-//confirmation of submit
 
-//Configure NGINX
+//add in a delete warning... 
