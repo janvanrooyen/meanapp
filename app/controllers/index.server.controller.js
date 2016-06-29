@@ -28,6 +28,6 @@ exports.renderEditRecipe = function(req, res, next) {
 	res.render('edit-recipe')
 };
 
-exports.renderRecipeList = function(req, res, next) {
-	res.render('recipe-list-test')
+exports.renderGallery = function(req, res, next) {
+    res.render('gallery')
 };

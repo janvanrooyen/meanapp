@@ -110,3 +110,15 @@ ol.list-numbers li:before {
 [ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
   display: none !important;
 }
+
+.bg-big {
+    background: url(/img/IMG_0336.jpg) no-repeat center center fixed;
+}
+
+.modal {
+  position: absolute; /* Gallery Modal... Needed because the carousel overrides the position property */
+}
+
+.carousel {
+  position: absolute; 
+} 

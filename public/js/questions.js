@@ -11,3 +11,7 @@
 //form errors
 
 //add in a delete warning... 
+
+//*************** Image Gallery *********************//
+//Need to Optimize the images (reduce size)
+//Need to reformat images to a standard size. Control through image file and not the web page. 
