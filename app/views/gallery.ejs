@@ -24,25 +24,23 @@
         <div class="col-md-4">
           <a data-toggle="modal" data-target="#FlowersModal"><img src="img/portfolio/flowers/goldenharvest.jpg" class="img-thumbnail img-responsive" alt="For the Love of Flowers Gallery">
           <h2 class="text-center">Love of Flowers</h2></a>
-          <!--<a><img src ="img/portfolio/flowers/goldenharvest.jpg" class="img-thumbnail img-responsive" alt="For the Love of Flowers Gallery">
-          <h2 class="text-center">Love of Flowers</h2></a> --> 
         </div>
         <div class="col-md-4">
-          <a href="/gallery/lines"><img src ="img/portfolio/lines/departure.jpg" class="img-thumbnail img-responsive" alt="Many Lines Gallery">
+          <a data-toggle="modal" data-target="#LinesModal"><img src ="img/portfolio/lines/departure.jpg" class="img-thumbnail img-responsive" alt="Many Lines Gallery">
           <h2 class="text-center">Many Lines</h2></a>
         </div>
       </div>
       <div class="row">
         <div class="col-md-4">
-          <a href="nature"><img src ="img/portfolio/nature/img_2775.jpg" class="img-thumbnail img-responsive" alt="Images of Nature Gallery">
+          <a data-toggle="modal" data-target="#NatureModal"><img src ="img/portfolio/nature/mojavesaturate.jpg" class="img-thumbnail img-responsive" alt="Images of Nature Gallery">
           <h2 class="text-center">Images of Nature</h2></a>
         </div>
         <div class="col-md-4">
-          <a href="/gallery/randoms"><img src ="img/portfolio/randoms/ussmidway.jpg" class="img-thumbnail img-responsive" alt="Some Randoms Gallery">
+          <a data-toggle="modal" data-target="#RandomsModal"><img src ="img/portfolio/randoms/ussmidway.jpg" class="img-thumbnail img-responsive" alt="Some Randoms Gallery">
           <h2 class="text-center">Just Some Randoms</h2></a>
         </div>
         <div class="col-md-4">
-          <a href="/gallery/zoo"><img src ="img/portfolio/zoo/img_9404.jpg" class="img-thumbnail img-responsive" alt="And the Zoo Gallery">
+          <a data-toggle="modal" data-target="#ZooModal"><img src ="img/portfolio/zoo/orangestingers.jpg" class="img-thumbnail img-responsive" alt="And the Zoo Gallery">
           <h2 class="text-center">And the Zoo</h2></a>
         </div>
       </div>
@@ -54,23 +52,23 @@
       <!--Modal Content-->
         <div class="modal-content">
           <div class="modal-body">
-            <div class="carousel-inner" role="listbox" ng-repeat="slide in thumbnail">  
+            <div class="carousel-inner" role="listbox" ng-repeat="slide in childsplay">  
               <div class="item" ng-class="{'active': $index == currentIndex}">
                 <img ng-src="{{slide.url}}" class="img-responsive">
               </div>
             </div> <!--.carousel-inner -->
             <!-- Left / Right Scroll -->
-            <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev" ng-click="setIndex(currentIndex-1)">
+            <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev" ng-click="setIndex(currentIndex-1, 'childsplay')">
               <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
               <span class="sr-only">Previous</span>
             </a>
-            <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next" ng-click="setIndex(currentIndex+1)">
+            <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next" ng-click="setIndex(currentIndex+1, 'childsplay')">
               <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
               <span class="sr-only">Next</span>
             </a> 
           </div> <!-- .modal-body-->
           <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal" ng-click="setIndex(0)">Close</button>
+            <button type="button" class="btn btn-default" data-dismiss="modal" ng-click="setIndex(0, 'childsplay')">Close</button>
           </div>
         </div> <!-- .modal-content -->
       </div>  <!-- .modal-dialog -->
@@ -87,17 +85,125 @@
               </div>
             </div> <!--.carousel-inner -->
             <!-- Left / Right Scroll -->
-            <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev" ng-click="setIndex(currentIndex-1)">
+            <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev" ng-click="setIndex(currentIndex-1, 'flowers')">
               <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
               <span class="sr-only">Previous</span>
             </a>
-            <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next" ng-click="setIndex(currentIndex+1)">
+            <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next" ng-click="setIndex(currentIndex+1, 'flowers')">
               <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
               <span class="sr-only">Next</span>
             </a> 
           </div> <!-- .modal-body-->
           <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal" ng-click="setIndex(0)">Close</button>
+            <button type="button" class="btn btn-default" data-dismiss="modal" ng-click="setIndex(0, 'flowers')">Close</button>
+          </div>
+        </div> <!-- .modal-content -->
+      </div>  <!-- .modal-dialog -->
+    </div>  <!-- .modal -->
+    <!-- Modal Lines -->
+    <div id="LinesModal" class="modal fade carousel slide" data-ride="carousel" role="dialog" ng-controller="Modal">
+      <div class="modal-dialog">
+      <!--Modal Content-->
+        <div class="modal-content">
+          <div class="modal-body">
+            <div class="carousel-inner" role="listbox" ng-repeat="slide in lines">  
+              <div class="item" ng-class="{'active': $index == currentIndex}">
+                <img ng-src="{{slide.url}}" class="img-responsive">
+              </div>
+            </div> <!--.carousel-inner -->
+            <!-- Left / Right Scroll -->
+            <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev" ng-click="setIndex(currentIndex-1, 'lines')">
+              <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next" ng-click="setIndex(currentIndex+1, 'lines')">
+              <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a> 
+          </div> <!-- .modal-body-->
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal" ng-click="setIndex(0, 'lines')">Close</button>
+          </div>
+        </div> <!-- .modal-content -->
+      </div>  <!-- .modal-dialog -->
+    </div>  <!-- .modal -->
+        <!-- Modal Nature -->
+    <div id="NatureModal" class="modal fade carousel slide" data-ride="carousel" role="dialog" ng-controller="Modal">
+      <div class="modal-dialog">
+      <!--Modal Content-->
+        <div class="modal-content">
+          <div class="modal-body">
+            <div class="carousel-inner" role="listbox" ng-repeat="slide in nature">  
+              <div class="item" ng-class="{'active': $index == currentIndex}">
+                <img ng-src="{{slide.url}}" class="img-responsive">
+              </div>
+            </div> <!--.carousel-inner -->
+            <!-- Left / Right Scroll -->
+            <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev" ng-click="setIndex(currentIndex-1, 'nature')">
+              <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next" ng-click="setIndex(currentIndex+1, 'nature')">
+              <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a> 
+          </div> <!-- .modal-body-->
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal" ng-click="setIndex(0, 'nature')">Close</button>
+          </div>
+        </div> <!-- .modal-content -->
+      </div>  <!-- .modal-dialog -->
+    </div>  <!-- .modal -->
+        <!-- Modal Zoo -->
+    <div id="ZooModal" class="modal fade carousel slide" data-ride="carousel" role="dialog" ng-controller="Modal">
+      <div class="modal-dialog">
+      <!--Modal Content-->
+        <div class="modal-content">
+          <div class="modal-body">
+            <div class="carousel-inner" role="listbox" ng-repeat="slide in zoo">  
+              <div class="item" ng-class="{'active': $index == currentIndex}">
+                <img ng-src="{{slide.url}}" class="img-responsive">
+              </div>
+            </div> <!--.carousel-inner -->
+            <!-- Left / Right Scroll -->
+            <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev" ng-click="setIndex(currentIndex-1, 'zoo')">
+              <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next" ng-click="setIndex(currentIndex+1, 'zoo')">
+              <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a> 
+          </div> <!-- .modal-body-->
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal" ng-click="setIndex(0, 'zoo')">Close</button>
+          </div>
+        </div> <!-- .modal-content -->
+      </div>  <!-- .modal-dialog -->
+    </div>  <!-- .modal -->
+            <!-- Modal Randoms-->
+    <div id="RandomsModal" class="modal fade carousel slide" data-ride="carousel" role="dialog" ng-controller="Modal">
+      <div class="modal-dialog">
+      <!--Modal Content-->
+        <div class="modal-content">
+          <div class="modal-body">
+            <div class="carousel-inner" role="listbox" ng-repeat="slide in randoms">  
+              <div class="item" ng-class="{'active': $index == currentIndex}">
+                <img ng-src="{{slide.url}}" class="img-responsive">
+              </div>
+            </div> <!--.carousel-inner -->
+            <!-- Left / Right Scroll -->
+            <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev" ng-click="setIndex(currentIndex-1, 'randoms')">
+              <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next" ng-click="setIndex(currentIndex+1, 'randoms')">
+              <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a> 
+          </div> <!-- .modal-body-->
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal" ng-click="setIndex(0, 'randoms')">Close</button>
           </div>
         </div> <!-- .modal-content -->
       </div>  <!-- .modal-dialog -->

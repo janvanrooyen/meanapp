@@ -112,13 +112,13 @@ ol.list-numbers li:before {
 }
 
 .bg-big {
-    background: url(/img/IMG_0336.jpg) no-repeat center center fixed;
+    background: url(/img/img    _0336.jpg) no-repeat center center fixed;
 }
 
 .modal {
-  position: absolute; /* Gallery Modal... Needed because the carousel overrides the position property */
+  position: fixed; /* Gallery Modal... Needed because the carousel overrides the position property */
 }
 
 .carousel {
-  position: absolute; 
+  position: fixed; 
 } 
