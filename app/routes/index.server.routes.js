@@ -15,4 +15,8 @@ module.exports = function(app) {
         .get(index.renderEditRecipe);
     app.route('/gallery')
         .get(index.renderGallery);
+    app.route('/googleef8cbd70513983af.html')
+        .get(index.renderGoogle);
+    app.route('/googletrack')
+        .get(index.renderGoogletrack);
 };

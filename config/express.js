@@ -14,5 +14,6 @@ module.exports = function() {
     require('../app/routes/recipe.server.routes.js')(app);
     require('../app/routes/gallery.server.routes.js')(app);
     app.use(express.static('./public'));
+    app.use('/ps', express.static('./node_modules/photoswipe/dist/'));
     return app;
 };

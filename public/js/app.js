@@ -1,9 +1,9 @@
 var appName = 'mean';
 var app = angular.module(appName, []); 
 
-angular.element(document).ready(function() {
-    angular.bootstrap(document, [appName]);
-});
+//angular.element(document).ready(function() {
+//    angular.bootstrap(document, [appName]);
+//});
 
 //Recipe Tab Control
 app.controller('TabsCtrl', ['$scope', '$rootScope', "tabCtrl", "curTab", function ($scope, $rootScope, tabCtrl, curTab) {

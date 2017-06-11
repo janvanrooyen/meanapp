@@ -31,3 +31,11 @@ exports.renderEditRecipe = function(req, res, next) {
 exports.renderGallery = function(req, res, next) {
     res.render('gallery')
 };
+
+exports.renderGoogle = function(req, res, next) {
+    res.render('google')
+};
+
+exports.renderGoogletrack = function(req, res, next) {
+    res.render('googletrack')
+};

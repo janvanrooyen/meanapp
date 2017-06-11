@@ -1,4 +1,3 @@
-
 exports.renderChildsplay = function(req, res, next) {
     res.render('gallery/childsplay')
 };
