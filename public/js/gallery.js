@@ -112,7 +112,12 @@ appGallery.factory('thumbnailGallery', function(){
 			src: 'img/portfolio/BW/janvanrooyen_web-58.jpg',
 			w:2100,
 			h:1500
-		}
+		},
+				{
+			src: 'img/portfolio/BW/DSC_2984.jpg',
+			w:2100,
+			h:1500
+		},
 	]; 
 
 	var randoms = [
@@ -188,6 +193,61 @@ appGallery.factory('thumbnailGallery', function(){
 		},
 		{
 			src: 'img/portfolio/randoms/janvanrooyen_web-59.jpg',
+			w:2100,
+			h:1500
+		},
+		{
+			src: 'img/portfolio/randoms/DSC_2197.jpg',
+			w:2100,
+			h:1500
+		},
+		{
+			src: 'img/portfolio/randoms/DSC_2208.jpg',
+			w:2100,
+			h:1500
+		},
+		{
+			src: 'img/portfolio/randoms/DSC_2223.jpg',
+			w:2100,
+			h:1500
+		},
+		{
+			src: 'img/portfolio/randoms/DSC_2438.jpg',
+			w:2100,
+			h:1500
+		},
+		{
+			src: 'img/portfolio/randoms/DSC_2932.jpg',
+			w:2100,
+			h:1500
+		},
+		{
+			src: 'img/portfolio/randoms/DSC_3017.jpg',
+			w:2100,
+			h:1500
+		},
+		{
+			src: 'img/portfolio/randoms/DSC_3088.jpg',
+			w:2100,
+			h:1500
+		},
+		{
+			src: 'img/portfolio/randoms/DSC_3095.jpg',
+			w:2100,
+			h:1500
+		},
+		{
+			src: 'img/portfolio/randoms/DSC_3113.jpg',
+			w:2100,
+			h:1500
+		},
+		{
+			src: 'img/portfolio/randoms/DSC_3148.jpg',
+			w:2100,
+			h:1500
+		},
+		{
+			src: 'img/portfolio/randoms/DSC_3351.jpg',
 			w:2100,
 			h:1500
 		},
@@ -311,6 +371,16 @@ appGallery.factory('thumbnailGallery', function(){
 		},
 		{
 			src: 'img/portfolio/nature/janvanrooyen_web-57.jpg',
+			w:2100,
+			h:1500
+		},
+		{
+			src: 'img/portfolio/nature/DSC_2568.jpg',
+			w:2100,
+			h:1500
+		},
+		{
+			src: 'img/portfolio/nature/DSC_2588.jpg',
 			w:2100,
 			h:1500
 		},
