@@ -1,9 +1,9 @@
 var appName = 'mean';
-var app = angular.module(appName, ['firebase']); //To Do: Remove the Firebase dependency
+var app = angular.module(appName, []); 
 
-angular.element(document).ready(function() {
-    angular.bootstrap(document, [appName]);
-});
+//angular.element(document).ready(function() {
+//    angular.bootstrap(document, [appName]);
+//});
 
 //Recipe Tab Control
 app.controller('TabsCtrl', ['$scope', '$rootScope', "tabCtrl", "curTab", function ($scope, $rootScope, tabCtrl, curTab) {
@@ -58,9 +58,16 @@ app.controller("RecipeViewController", ["$scope", "$rootScope", "tabCtrl", "curT
 
     // update recipe
 
+    $scope.deleteClient = function(){
+      //var url = 'http://localhost:8081/recipedb/' + $scope.selected._id;
+      var url = 'http://www.janvanrooyen.com/recipedb/' + $scope.selected._id;
+      $http.delete(url);
+      $rootScope.currentTab = "/find-recipe";
+    };
+
     $scope.saveClient = function() {
       var url = 'http://www.janvanrooyen.com/recipedb/' + $scope.selected._id;
-     
+     //var url = 'http://localhost:8081/recipedb/' + $scope.selected._id;
       $scope.message = {
         title: $scope.selected.title,
         ingredients: $scope.selected.ingredients, 
@@ -99,6 +106,11 @@ app.controller("RecipeViewController", ["$scope", "$rootScope", "tabCtrl", "curT
       var itemNo = $scope.selected.ingredients.length-1;
       if (itemNo === 0){
         alert("Don't be stupid");
+      }
+      else if (itemNo === 1){
+        console.log(itemNo);
+        $scope.ingredients.splice(itemNo,1);
+        $scope.focusIndex = 1;
       }
       else {
         $scope.selected.ingredients.splice(itemNo,1);
@@ -156,6 +168,7 @@ app.controller("FindRecipeController", ["$scope", "$rootScope", "$http", "tabCtr
   function ($scope, $rootScope, $http, tabCtrl, curTab) {
 
     $http.get('http://www.janvanrooyen.com/recipedb')
+    //$http.get('http://localhost:8081/recipedb')
           .success(function(data, status, headers, config) {
               $scope.messages = data;
               })  
@@ -214,10 +227,12 @@ app.controller("AddRecipeController", ["$scope", "$http", "tabCtrl", "curTab",
         notes: $scope.notes
       } 
 
-      $http.post('http://www.janvanrooyen.com/recipedb', $scope.message)
+        $http.post('http://www.janvanrooyen.com/recipedb', $scope.message)
+       // $http.post('http://localhost:8081/recipedb', $scope.message)  
           .success(function(data, status, headers, config) {
               console.log("Succesfully written to the database" + " " + $scope.message);
               console.log($scope.message);
+              alert($scope.message.title + " has been saved!");
               })
           .error(function(data, status, headers, config) {
               alert(data.message);
@@ -249,7 +264,13 @@ app.controller("AddRecipeController", ["$scope", "$http", "tabCtrl", "curTab",
       if (itemNo === 0){
         alert("Don't be stupid");
       }
-      else {
+      else if (itemNo === 1){
+        console.log(itemNo);
+        $scope.ingredients.splice(itemNo,1);
+        $scope.focusIndex = 1;
+      }
+
+      else  {
         $scope.ingredients.splice(itemNo,1);
         $scope.focusIndex = $scope.ingredients.length-1;
       }

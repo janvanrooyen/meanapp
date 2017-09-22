@@ -13,6 +13,10 @@ module.exports = function(app) {
     	.get(index.renderRecipe);
     app.route('/edit-recipe')
         .get(index.renderEditRecipe);
-    app.route('/recipe-list-test')
-        .get(index.renderRecipeList);
+    app.route('/gallery')
+        .get(index.renderGallery);
+    app.route('/googleef8cbd70513983af.html')
+        .get(index.renderGoogle);
+    app.route('/googletrack')
+        .get(index.renderGoogletrack);
 };
