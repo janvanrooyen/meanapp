@@ -122,3 +122,100 @@ ol.list-numbers li:before {
 .carousel {
   position: fixed; 
 } 
+ /* Home Page Navigation Circle */
+#circle {
+  display: block;
+  padding: 0;
+  width: 600px;
+  height: 600px;
+  border: 1px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.quarter {
+  display: inline-block;
+  float: left;
+  margin: 0;
+  padding: 0;
+  width: 300px;
+  height: 300px;
+
+}
+#q1 {
+    background-color: #fff;
+    background-color: rgba(255,255,255,0.5);    
+    background-image: url(/img/icons/bulb.png);
+    background-size: contain;
+}
+#q1:hover {
+    background-color: #fff;
+    background-image: url(/img/icons/bulb_dark.png);
+    background-size: contain;
+
+}
+
+#q2 {
+    background-color: #fff;
+    background-color: rgba(255,255,255,0.5);
+    background-image: url(/img/icons/camera.png);
+    background-size: contain;
+
+}
+#q2:hover {
+    background-color: #fff;
+    background-image: url(/img/icons/camera_hover.png);
+    background-size: contain;
+}
+#q3 {
+    background-color: #fff;
+    background-color: rgba(255,255,255,0.5);
+    background-image: url(/img/icons/yinyang.png);
+    background-size: contain;
+}
+#q3:hover {
+    background-color: #fff;
+    background-image: url(/img/icons/yinyang_hover.png);
+    background-size: contain;
+}
+#q4 {
+    background-color: #fff;
+    background-color: rgba(255,255,255,0.5);
+    background-image: url(/img/icons/circle.png);   
+    background-size: contain;
+}
+#q4:hover {
+    background-color: #fff;
+    background-image: url(/img/icons/circle_hover.png);
+    background-size: contain;
+}
+.icon {
+  display: inline-block;
+  float: right;
+  margin: 100px 70px 0px 40px;
+  padding: 0;
+  position: absolute;
+  opacity: 1;
+  z-index: 1;
+} 
+
+@media only screen and (max-width: 650px) {
+
+#circle {
+  display: block;
+  padding: 0;
+  width: 300px;
+  height: 300px;
+  border: 1px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.quarter {
+  display: inline-block;
+  float: left;
+  margin: 0;
+  padding: 0;
+  width: 150px;
+  height: 150px;
+
+}
+}
