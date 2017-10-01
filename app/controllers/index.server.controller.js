@@ -9,23 +9,23 @@ exports.renderNavigation = function(req, res, next) {
 };
 
 exports.renderRecipes = function(req, res, next) {
-    res.render('recipes')
+    res.render('recipe/recipes')
 };
 
 exports.renderAddRecipe = function(req, res, next) {
-    res.render('add-recipe')
+    res.render('recipe/add-recipe')
 };
 
 exports.renderFindRecipe = function(req, res, next) {
-    res.render('find-recipe')
+    res.render('recipe/find-recipe')
 };
 
 exports.renderRecipe = function(req, res, next) {
-    res.render('view-recipe')
+    res.render('recipe/view-recipe')
 };
 
 exports.renderEditRecipe = function(req, res, next) {
-	res.render('edit-recipe')
+	res.render('recipe/edit-recipe')
 };
 
 exports.renderGallery = function(req, res, next) {
