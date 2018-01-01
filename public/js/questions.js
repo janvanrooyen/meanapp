@@ -1,3 +1,5 @@
+//Gallery is using old bootstrap version
+
 //Need to udpate validation logic to the form
 //Add userID to the Form
 //User Authentication

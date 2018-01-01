@@ -5,9 +5,7 @@ var appGallery = angular.module(appName, ['ui.bootstrap']);
  //   angular.bootstrap(document, [appName]);
 //});
 
-
 appGallery.controller('Modal', ['$scope', '$http', 'thumbnailGallery', function($scope, $http, thumbnailGallery) {
-    console.log('test');
     $scope.openPhotoSwipe = function(x) {
     	var gallery = x;
     	console.log(gallery);
@@ -34,358 +32,532 @@ appGallery.factory('thumbnailGallery', function(){
 
 	var BW = [
 		{
-			src: 'img/portfolio/BW/janvanrooyen_web-6.jpg',
+			src: 'img/portfolio/bw/bw_1.jpg',
 			w:2100,
 			h:1500
 		},
 		{
-			src: 'img/portfolio/BW/janvanrooyen_web-7.jpg',
+			src: 'img/portfolio/bw/bw_2.jpg',
 			w:2100,
 			h:1500
 		},
 		{
-			src: 'img/portfolio/BW/janvanrooyen_web-8.jpg',
+			src: 'img/portfolio/bw/bw_3.jpg',
 			w:2100,
 			h:1500
 		},
 		{
-			src: 'img/portfolio/BW/janvanrooyen_web-10.jpg',
+			src: 'img/portfolio/bw/bw_4.jpg',
 			w:3200,
 			h:1000
 		},
 		{
-			src: 'img/portfolio/BW/janvanrooyen_web-11.jpg',
+			src: 'img/portfolio/bw/bw_5.jpg',
 			w:2100,
 			h:1500
 		},
 		{
-			src: 'img/portfolio/BW/janvanrooyen_web-17.jpg',
+			src: 'img/portfolio/bw/bw_6.jpg',
 			w:2100,
 			h:1500
 		},
 		{
-			src: 'img/portfolio/BW/janvanrooyen_web-18.jpg',
+			src: 'img/portfolio/bw/bw_7.jpg',
 			w:2100,
 			h:1500
 		},
 		{
-			src: 'img/portfolio/BW/janvanrooyen_web-21.jpg',
+			src: 'img/portfolio/bw/bw_8.jpg',
 			w:1880,
 			h:2700
 		},
 		{
-			src: 'img/portfolio/BW/janvanrooyen_web-24.jpg',
+			src: 'img/portfolio/bw/bw_9.jpg',
 			w:2100,
 			h:1500
 		},
 		{
-			src: 'img/portfolio/BW/janvanrooyen_web-27.jpg',
+			src: 'img/portfolio/bw/bw_10.jpg',
 			w:2100,
 			h:1500
 		},
 		{
-			src: 'img/portfolio/BW/janvanrooyen_web-30.jpg',
+			src: 'img/portfolio/bw/bw_11.jpg',
 			w:1880,
 			h:2700
 		},
 		{
-			src: 'img/portfolio/BW/janvanrooyen_web-31.jpg',
+			src: 'img/portfolio/bw/bw_12.jpg',
 			w:2100,
 			h:1500
 		},
 		{
-			src: 'img/portfolio/BW/janvanrooyen_web-33.jpg',
+			src: 'img/portfolio/bw/bw_13.jpg',
 			w:2100,
 			h:1500
 		},
 		{
-			src: 'img/portfolio/BW/janvanrooyen_web-40.jpg',
+			src: 'img/portfolio/bw/bw_14.jpg',
 			w:2100,
 			h:1500
 		},
 		{
-			src: 'img/portfolio/BW/janvanrooyen_web-47.jpg',
+			src: 'img/portfolio/bw/bw_15.jpg',
 			w:2100,
 			h:1500
 		},
 		{
-			src: 'img/portfolio/BW/janvanrooyen_web-58.jpg',
+			src: 'img/portfolio/bw/bw_16.jpg',
 			w:2100,
 			h:1500
-		},
-				{
-			src: 'img/portfolio/BW/DSC_2984.jpg',
-			w:2100,
-			h:1500
-		},
+		}
 	]; 
 
 	var randoms = [
 		{
-			src: 'img/portfolio/randoms/janvanrooyen_web-1.jpg',
+			src: 'img/portfolio/randoms/randoms_1.jpg',
 			w:2100,
 			h:1500
 		},
 		{
-			src: 'img/portfolio/randoms/janvanrooyen_web-2.jpg',
+			src: 'img/portfolio/randoms/randoms_2.jpg',
 			w:2100,
 			h:1500
 		},	
 		{
-			src: 'img/portfolio/randoms/janvanrooyen_web-9.jpg',
+			src: 'img/portfolio/randoms/randoms_3.jpg',
 			w:2100,
 			h:1500
 		},	
 		{
-			src: 'img/portfolio/randoms/janvanrooyen_web-12.jpg',
+			src: 'img/portfolio/randoms/randoms_4.jpg',
 			w:2100,
 			h:1500
 		},
 		{
-			src: 'img/portfolio/randoms/janvanrooyen_web-16.jpg',
+			src: 'img/portfolio/randoms/randoms_5.jpg',
 			w:2100,
 			h:1500
 		},
 		{
-			src: 'img/portfolio/randoms/janvanrooyen_web-28.jpg',
+			src: 'img/portfolio/randoms/randoms_6.jpg',
 			w:2100,
 			h:1500
 		},
 		{
-			src: 'img/portfolio/randoms/janvanrooyen_web-29.jpg',
-			w:1880,
-			h:2700
+			src: 'img/portfolio/randoms/randoms_7.jpg',
+			w:2180,
+			h:1500
 		},
 		{
-			src: 'img/portfolio/randoms/janvanrooyen_web-34.jpg',
+			src: 'img/portfolio/randoms/randoms_8.jpg',
 			w:2100,
 			h:1500
 		},
 		{
-			src: 'img/portfolio/randoms/janvanrooyen_web-39.jpg',
+			src: 'img/portfolio/randoms/randoms_9.jpg',
 			w:2100,
 			h:1500
 		},
 		{
-			src: 'img/portfolio/randoms/janvanrooyen_web-42.jpg',
+			src: 'img/portfolio/randoms/randoms_10.jpg',
 			w:2100,
 			h:1500
 		},
 		{
-			src: 'img/portfolio/randoms/janvanrooyen_web-43.jpg',
+			src: 'img/portfolio/randoms/randoms_11.jpg',
 			w:2100,
 			h:1500
 		},	
 		{
-			src: 'img/portfolio/randoms/janvanrooyen_web-44.jpg',
+			src: 'img/portfolio/randoms/randoms_12.jpg',
 			w:2100,
 			h:1500
 		},			
 		{
-			src: 'img/portfolio/randoms/janvanrooyen_web-48.jpg',
+			src: 'img/portfolio/randoms/randoms_13.jpg',
 			w:2100,
 			h:1500
 		},
 		{
-			src: 'img/portfolio/randoms/janvanrooyen_web-49.jpg',
+			src: 'img/portfolio/randoms/randoms_14.jpg',
 			w:2100,
 			h:1500
 		},
 		{
-			src: 'img/portfolio/randoms/janvanrooyen_web-59.jpg',
+			src: 'img/portfolio/randoms/randoms_15.jpg',
 			w:2100,
 			h:1500
 		},
 		{
-			src: 'img/portfolio/randoms/DSC_2197.jpg',
+			src: 'img/portfolio/randoms/randoms_16.jpg',
 			w:2100,
 			h:1500
 		},
 		{
-			src: 'img/portfolio/randoms/DSC_2208.jpg',
+			src: 'img/portfolio/randoms/randoms_17.jpg',
 			w:2100,
 			h:1500
 		},
 		{
-			src: 'img/portfolio/randoms/DSC_2223.jpg',
+			src: 'img/portfolio/randoms/randoms_18.jpg',
 			w:2100,
 			h:1500
 		},
 		{
-			src: 'img/portfolio/randoms/DSC_2438.jpg',
+			src: 'img/portfolio/randoms/randoms_19.jpg',
 			w:2100,
 			h:1500
 		},
 		{
-			src: 'img/portfolio/randoms/DSC_2932.jpg',
+			src: 'img/portfolio/randoms/randoms_20.jpg',
 			w:2100,
 			h:1500
-		},
-		{
-			src: 'img/portfolio/randoms/DSC_3017.jpg',
-			w:2100,
-			h:1500
-		},
-		{
-			src: 'img/portfolio/randoms/DSC_3088.jpg',
-			w:2100,
-			h:1500
-		},
-		{
-			src: 'img/portfolio/randoms/DSC_3095.jpg',
-			w:2100,
-			h:1500
-		},
-		{
-			src: 'img/portfolio/randoms/DSC_3113.jpg',
-			w:2100,
-			h:1500
-		},
-		{
-			src: 'img/portfolio/randoms/DSC_3148.jpg',
-			w:2100,
-			h:1500
-		},
-		{
-			src: 'img/portfolio/randoms/DSC_3351.jpg',
-			w:2100,
-			h:1500
-		},
+		}
 	];
 
 	var nature = [
 		{
-			src: 'img/portfolio/nature/janvanrooyen_web-3.jpg',
+			src: 'img/portfolio/nature/nature_1.jpg',
 			w:2100,
 			h:1700
 		},
 		{
-			src: 'img/portfolio/nature/janvanrooyen_web-4.jpg',
+			src: 'img/portfolio/nature/nature_2.jpg',
 			w:2100,
 			h:1500
 		},
 		{
-			src: 'img/portfolio/nature/janvanrooyen_web-5.jpg',
+			src: 'img/portfolio/nature/nature_3.jpg',
+			w:2100,
+			h:1500
+		},
+		{
+			src: 'img/portfolio/nature/nature_4.jpg',
+			w:2100,
+			h:1500
+		},
+		{
+			src: 'img/portfolio/nature/nature_5.jpg',
 			w:1880,
 			h:2700
 		},
 		{
-			src: 'img/portfolio/nature/janvanrooyen_web-13.jpg',
+			src: 'img/portfolio/nature/nature_6.jpg',
 			w:2100,
 			h:1500
 		},
 		{
-			src: 'img/portfolio/nature/janvanrooyen_web-19.jpg',
+			src: 'img/portfolio/nature/nature_7.jpg',
 			w:2100,
 			h:1500
 		},
 		{
-			src: 'img/portfolio/nature/janvanrooyen_web-20.jpg',
+			src: 'img/portfolio/nature/nature_8.jpg',
 			w:2100,
 			h:1500
 		},
 		{
-			src: 'img/portfolio/nature/janvanrooyen_web-22.jpg',
+			src: 'img/portfolio/nature/nature_9.jpg',
 			w:2100,
 			h:1500
 		},
 		{
-			src: 'img/portfolio/nature/janvanrooyen_web-23.jpg',
+			src: 'img/portfolio/nature/nature_10.jpg',
 			w:2100,
 			h:1500
 		},
 		{
-			src: 'img/portfolio/nature/janvanrooyen_web-25.jpg',
-			w:3200,
+			src: 'img/portfolio/nature/nature_11.jpg',
+			w:2700,
 			h:700
 		},
 		{
-			src: 'img/portfolio/nature/janvanrooyen_web-26.jpg',
+			src: 'img/portfolio/nature/nature_12.jpg',
 			w:2100,
 			h:1500
 		},
 		{
-			src: 'img/portfolio/nature/janvanrooyen_web-32.jpg',
+			src: 'img/portfolio/nature/nature_13.jpg',
 			w:2100,
 			h:1500
 		},
 		{
-			src: 'img/portfolio/nature/janvanrooyen_web-35.jpg',
+			src: 'img/portfolio/nature/nature_14.jpg',
 			w:2100,
 			h:1500
 		},
 		{
-			src: 'img/portfolio/nature/janvanrooyen_web-37.jpg',
+			src: 'img/portfolio/nature/nature_15.jpg',
 			w:2100,
 			h:1500
 		},
 		{
-			src: 'img/portfolio/nature/janvanrooyen_web-38.jpg',
+			src: 'img/portfolio/nature/nature_16.jpg',
 			w:2100,
 			h:1500
 		},
 		{
-			src: 'img/portfolio/nature/janvanrooyen_web-45.jpg',
+			src: 'img/portfolio/nature/nature_17.jpg',
 			w:2100,
 			h:1500
 		},
 		{
-			src: 'img/portfolio/nature/janvanrooyen_web-46.jpg',
+			src: 'img/portfolio/nature/nature_18.jpg',
 			w:2100,
 			h:1500
 		},
 		{
-			src: 'img/portfolio/nature/janvanrooyen_web-50.jpg',
+			src: 'img/portfolio/nature/nature_19.jpg',
 			w:2100,
 			h:1500
 		},
 		{
-			src: 'img/portfolio/nature/janvanrooyen_web-51.jpg',
+			src: 'img/portfolio/nature/nature_20.jpg',
 			w:2100,
 			h:1500
 		},
 		{
-			src: 'img/portfolio/nature/janvanrooyen_web-52.jpg',
+			src: 'img/portfolio/nature/nature_21.jpg',
 			w:2100,
 			h:1500
-		},
-		{
-			src: 'img/portfolio/nature/janvanrooyen_web-53.jpg',
-			w:2100,
-			h:1500
-		},
-		{
-			src: 'img/portfolio/nature/janvanrooyen_web-54.jpg',
-			w:2100,
-			h:1500
-		},
-		{
-			src: 'img/portfolio/nature/janvanrooyen_web-55.jpg',
-			w:2100,
-			h:1500
-		},
-		{
-			src: 'img/portfolio/nature/janvanrooyen_web-56.jpg',
-			w:2100,
-			h:1500
-		},
-		{
-			src: 'img/portfolio/nature/janvanrooyen_web-57.jpg',
-			w:2100,
-			h:1500
-		},
-		{
-			src: 'img/portfolio/nature/DSC_2568.jpg',
-			w:2100,
-			h:1500
-		},
-		{
-			src: 'img/portfolio/nature/DSC_2588.jpg',
-			w:2100,
-			h:1500
-		},
+		}
 	];
 
+	var butterflies = [
+		{
+			src: 'img/portfolio/butterflies/butterflies_1.jpg',
+			w:2100,
+			h:1500
+		},
+		{
+			src: 'img/portfolio/butterflies/butterflies_2.jpg',
+			w:2100,
+			h:1500
+		},
+		{
+			src: 'img/portfolio/butterflies/butterflies_3.jpg',
+			w:2100,
+			h:1500
+		},
+		{
+			src: 'img/portfolio/butterflies/butterflies_4.jpg',
+			w:2100,
+			h:1500
+		},
+		{
+			src: 'img/portfolio/butterflies/butterflies_5.jpg',
+			w:2100,
+			h:1500
+		}
+	];
+	
+	var eveningglow = [
+		{
+			src: 'img/portfolio/eveningglow/eveningglow_1.jpg',
+			w:2100,
+			h:1500
+		},
+		{
+			src: 'img/portfolio/eveningglow/eveningglow_2.jpg',
+			w:2100,
+			h:1500
+		},
+		{
+			src: 'img/portfolio/eveningglow/eveningglow_3.jpg',
+			w:2100,
+			h:1500
+		},
+		{
+			src: 'img/portfolio/eveningglow/eveningglow_4.jpg',
+			w:2100,
+			h:1500
+		},
+		{
+			src: 'img/portfolio/eveningglow/eveningglow_5.jpg',
+			w:2100,
+			h:1500
+		},
+		{
+			src: 'img/portfolio/eveningglow/eveningglow_6.jpg',
+			w:2100,
+			h:1500
+		},
+		{
+			src: 'img/portfolio/eveningglow/eveningglow_7.jpg',
+			w:2100,
+			h:1500
+		},
+		{
+			src: 'img/portfolio/eveningglow/eveningglow_8.jpg',
+			w:2100,
+			h:1500
+		}	
+	];
+
+	var hotair = [
+		{
+			src: 'img/portfolio/hotair/hotair_1.jpg',
+			w:2100,
+			h:1500
+		},
+		{
+			src: 'img/portfolio/hotair/hotair_2.jpg',
+			w:2100,
+			h:1500
+		},
+		{
+			src: 'img/portfolio/hotair/hotair_3.jpg',
+			w:2100,
+			h:1500
+		},
+		{
+			src: 'img/portfolio/hotair/hotair_4.jpg',
+			w:2100,
+			h:1500
+		},
+		{
+			src: 'img/portfolio/hotair/hotair_5.jpg',
+			w:2100,
+			h:1500
+		},
+		{
+			src: 'img/portfolio/hotair/hotair_6.jpg',
+			w:1880,
+			h:2700
+		}	
+	];
+
+	var puertorico = [
+		{
+			src: 'img/portfolio/puertorico/puertorico_1.jpg',
+			w:2100,
+			h:1500
+		},
+		{
+			src: 'img/portfolio/puertorico/puertorico_2.jpg',
+			w:2100,
+			h:1500
+		},
+		{
+			src: 'img/portfolio/puertorico/puertorico_3.jpg',
+			w:2100,
+			h:1500
+		},
+		{
+			src: 'img/portfolio/puertorico/puertorico_4.jpg',
+			w:2100,
+			h:1500
+		},
+		{
+			src: 'img/portfolio/puertorico/puertorico_5.jpg',
+			w:2100,
+			h:1500
+		},
+		{
+			src: 'img/portfolio/puertorico/puertorico_6.jpg',
+			w:2100,
+			h:1500
+		},
+		{
+			src: 'img/portfolio/puertorico/puertorico_7.jpg',
+			w:2100,
+			h:1500
+		},
+		{
+			src: 'img/portfolio/puertorico/puertorico_8.jpg',
+			w:2100,
+			h:1500
+		},		
+		{
+			src: 'img/portfolio/puertorico/puertorico_9.jpg',
+			w:2100,
+			h:1500
+		},
+		{
+			src: 'img/portfolio/puertorico/puertorico_10.jpg',
+			w:2100,
+			h:1500
+		},
+		{
+			src: 'img/portfolio/puertorico/puertorico_11.jpg',
+			w:2100,
+			h:1500
+		},		
+		{
+			src: 'img/portfolio/puertorico/puertorico_12.jpg',
+			w:2100,
+			h:1500
+		},
+		{
+			src: 'img/portfolio/puertorico/puertorico_13.jpg',
+			w:2100,
+			h:1500
+		},
+		{
+			src: 'img/portfolio/puertorico/puertorico_14.jpg',
+			w:2100,
+			h:1500
+		},
+		{
+			src: 'img/portfolio/puertorico/puertorico_15.jpg',
+			w:2100,
+			h:1500
+		},
+		{
+			src: 'img/portfolio/puertorico/puertorico_16.jpg',
+			w:2100,
+			h:1500
+		}
+	];
+
+	var zooshots = [
+		{
+			src: 'img/portfolio/zooshots/zooshots_1.jpg',
+			w:2100,
+			h:1500
+		},
+		{
+			src: 'img/portfolio/zooshots/zooshots_2.jpg',
+			w:2100,
+			h:1500
+		},
+		{
+			src: 'img/portfolio/zooshots/zooshots_3.jpg',
+			w:2100,
+			h:1500
+		},
+		{
+			src: 'img/portfolio/zooshots/zooshots_4.jpg',
+			w:1880,
+			h:2770
+		},
+		{
+			src: 'img/portfolio/zooshots/zooshots_5.jpg',
+			w:2100,
+			h:1500
+		},
+		{
+			src: 'img/portfolio/zooshots/zooshots_6.jpg',
+			w:2100,
+			h:1500
+		},
+		{
+			src: 'img/portfolio/zooshots/zooshots_7.jpg',
+			w:2100,
+			h:1500
+		},
+		{
+			src: 'img/portfolio/zooshots/zooshots_8.jpg',
+			w:2100,
+			h:1500
+		},		
+		{
+			src: 'img/portfolio/zooshots/zooshots_9.jpg',
+			w:2100,
+			h:1500
+		}
+	];
 
 	var service = {};
   	service.getImage = function(x){	
@@ -395,7 +567,17 @@ appGallery.factory('thumbnailGallery', function(){
 			case 'nature': var gallery = nature; return gallery;
 				break; 
 			case 'randoms': var gallery = randoms; return gallery;
+				break;
+			case 'butterflies': var gallery = butterflies; return gallery;
 				break; 
+			case 'eveningglow': var gallery = eveningglow; return gallery;
+				break;
+			case 'hotair': var gallery = hotair; return gallery;
+				break;
+			case 'puertorico': var gallery = puertorico; return gallery;
+				break;
+			case 'zooshots': var gallery = zooshots; return gallery;
+				break;
 		}	
  
   	}

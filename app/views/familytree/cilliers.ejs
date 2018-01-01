@@ -1,0 +1,103 @@
+
+<!doctype html>
+<html lang="en" ng-app="familytree">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>janvanrooyen.com</title>
+    <!--<link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/familytree.css" />
+    <!-- Core PS CSS file -->
+    <link rel="stylesheet" href="../ps/photoswipe.css">
+    <!-- PS Skin CSS file (styling of UI - buttons, caption, etc.)
+     In the folder of skin CSS file there are also:
+     - .png and .svg icons sprite, 
+     - preloader.gif (for browsers that do not support CSS animations) -->
+    <link rel="stylesheet" href="../ps/default-skin/default-skin.css">  
+  </head>
+  <body ng-cloak>  
+  	<div ng-include="'../navigation'"></div>
+      <div ng-controller="FamilyTreeCtrl">
+        <div class="container">
+            <img class="img-fluid rounded mx-auto d-block" src="/img/familytree/cilliers/cilliers_niehaus_family_scrapbook-2.jpg">
+        </div>
+        <div class="container">
+        	<div class="row">
+            <div class="col-sm-5">
+              <img class="img-fluid rounded mx-auto d-block" src="/img/familytree/cilliers/grandfather.jpg">
+            </div>
+            <div class="col-sm-6">
+              <img class="img-fluid rounded mx-auto d-block" src="/img/familytree/cilliers/greatgrandparents.jpg">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-5">
+              <img class="img-fluid rounded mx-auto d-block" src="/img/familytree/cilliers/grandfather_grandmother.jpg">
+              <img class="img-fluid rounded mx-auto d-block" src="/img/familytree/cilliers/christine_cilliers.jpg">
+            </div>        		
+            <div class="col-sm-6">
+        			<img class="img-fluid rounded mx-auto d-block" src="/img/familytree/cilliers/cilliers_brothers.jpg">
+        		</div>
+        	</div>
+        </div>
+      </div>
+      <!-- PhotoSwipe -->
+      <!-- Root element of PhotoSwipe. Must have class pswp. -->
+      <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+        <!-- Background of PhotoSwipe. 
+         It's a separate element, as animating opacity is faster than rgba(). -->
+        <div class="pswp__bg"></div>
+        <!-- Slides wrapper with overflow:hidden. -->
+        <div class="pswp__scroll-wrap">
+          <!-- Container that holds slides. PhotoSwipe keeps only 3 slides in DOM to save memory. -->
+          <div class="pswp__container">
+            <!-- don't modify these 3 pswp__item elements, data is added later on -->
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+          </div>
+          <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+          <div class="pswp__ui pswp__ui--hidden">
+            <div class="pswp__top-bar">
+                <!--  Controls are self-explanatory. Order can be changed. -->
+                <div class="pswp__counter"></div>
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div> 
+            </div>
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+          </div>
+        </div>
+      </div>      <!-- End PhotoSwipe-->
+    <script src="../js/vendor/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script> 
+    <script src="../js/vendor/angular.min.js"></script>
+    <script src="../js/familytree.js"></script>
+    <script src="//angular-ui.github.io/bootstrap/ui-bootstrap-tpls-1.3.3.js"></script>
+    <script src="../ps/photoswipe.js"></script> 
+    <script src="../ps/photoswipe-ui-default.min.js"></script> 
+
+  </body>
+</html>

@@ -111,8 +111,15 @@ ol.list-numbers li:before {
   display: none !important;
 }
 
-.bg-big {
-    background: url(/img/img_0336.jpg) no-repeat center center fixed;
+.bg-big { /*index page background image */
+    background-image: url(/img/portfolio/eveningglow/eveningglow_7.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: black; 
+}
+
+.bg-gallery {
+  background-color: black;
 }
 
 .modal {
