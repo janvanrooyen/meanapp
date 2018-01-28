@@ -2,7 +2,9 @@ module.exports = function(app) {
 	var index = require('../controllers/index.server.controller');
 	app.get('/', index.render);
 	app.route('/navigation')
-        .get(index.renderNavigation);
+        .get(index.renderNavigation);   
+    app.route('/navigation_BS4')
+        .get(index.renderNavigation_BS4);
     app.route('/recipes')
     	.get(index.renderRecipes);
     app.route('/add-recipe')
