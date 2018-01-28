@@ -1,2 +1,11 @@
 body {
-    background-color: #bfc0c1
+    background-color: black;
+}
+
+.nav_arrows {
+	top: 10em !important;
+}
+
+.navigation {
+	z-index: 10;
+}

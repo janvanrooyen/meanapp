@@ -7,6 +7,9 @@ exports.render = function(req, res) {
 exports.renderNavigation = function(req, res, next) {
     res.render('navigation')
 };
+exports.renderNavigation_BS4 = function(req, res, next) {
+    res.render('navigation_BS4')
+};
 
 exports.renderRecipes = function(req, res, next) {
     res.render('recipe/recipes')

@@ -15,6 +15,7 @@ module.exports = function() {
     require('../app/routes/gallery.server.routes.js')(app);
     require('../app/routes/familytree.server.routes.js')(app);
     app.use(express.static('./public'));
+    app.use('/familytree', express.static('public'));
     app.use('/ps', express.static('./node_modules/photoswipe/dist/'));
     return app;
 };

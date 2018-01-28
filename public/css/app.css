@@ -113,10 +113,28 @@ ol.list-numbers li:before {
 
 .bg-big { /*index page background image */
     background-image: url(/img/portfolio/eveningglow/eveningglow_7.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: black; 
-}
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-size: cover;
+    background-position: bottom;
+    color: #fff;
+    text-align: center;
+    text-rendering: optimizeLegibility;
+    z-index: -1;
+} 
+
+.bg-big:after {
+    content: '';
+    position: fixed;
+    top: 60px;
+    right: 10px;
+    bottom: 10px;
+    left: 10px;
+    border: 1px solid rgba(255,255,255,.2);
+  }
 
 .bg-gallery {
   background-color: black;
@@ -130,99 +148,95 @@ ol.list-numbers li:before {
   position: fixed; 
 } 
  /* Home Page Navigation Circle */
-#circle {
-  display: block;
-  padding: 0;
-  width: 600px;
-  height: 600px;
-  border: 1px;
-  border-radius: 50%;
-  overflow: hidden;
-}
-.quarter {
-  display: inline-block;
-  float: left;
-  margin: 0;
-  padding: 0;
-  width: 300px;
-  height: 300px;
-
-}
-#q1 {
-    background-color: #fff;
-    background-color: rgba(255,255,255,0.5);    
-    background-image: url(/img/icons/bulb.png);
-    background-size: contain;
-}
-#q1:hover {
-    background-color: #fff;
-    background-image: url(/img/icons/bulb_dark.png);
-    background-size: contain;
-
+.center-display {
+    position: relative;
+    height: 50%; /* this can be anything */
+    width: 50%; /* ...but maintain 1:1 aspect ratio */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /*border: 1px solid white;*/ 
+    top: 25%; 
+    z-index: 10;
 }
 
-#q2 {
-    background-color: #fff;
-    background-color: rgba(255,255,255,0.5);
-    background-image: url(/img/icons/camera.png);
-    background-size: contain;
+.center-display::before,
+.center-display::after {
+    position: absolute;
+    content: '';
+    width: 40%;
+    height: 4px; /* cross thickness */
+    background-color: black;
+    z-index: 11;
+    left: 30%;
+}
 
+.center-display:hover:before,
+.center-display:hover:after {
+    position: absolute;
+    content: '';
+    width: 40%;
+    height: 4px; /* cross thickness */
+    background-color: white;
+    z-index: 11;
+    left: 30%;
 }
-#q2:hover {
-    background-color: #fff;
-    background-image: url(/img/icons/camera_hover.png);
-    background-size: contain;
-}
-#q3 {
-    background-color: #fff;
-    background-color: rgba(255,255,255,0.5);
-    background-image: url(/img/icons/yinyang.png);
-    background-size: contain;
-}
-#q3:hover {
-    background-color: #fff;
-    background-image: url(/img/icons/yinyang_hover.png);
-    background-size: contain;
-}
-#q4 {
-    background-color: #fff;
-    background-color: rgba(255,255,255,0.5);
-    background-image: url(/img/icons/circle.png);   
-    background-size: contain;
-}
-#q4:hover {
-    background-color: #fff;
-    background-image: url(/img/icons/circle_hover.png);
-    background-size: contain;
-}
-.icon {
-  display: inline-block;
-  float: right;
-  margin: 100px 70px 0px 40px;
-  padding: 0;
-  position: absolute;
-  opacity: 1;
-  z-index: 1;
+
+.center-display::before {
+    transform: rotate(45deg);
 } 
 
-@media only screen and (max-width: 650px) {
-
-#circle {
-  display: block;
-  padding: 0;
-  width: 300px;
-  height: 300px;
-  border: 1px;
-  border-radius: 50%;
-  overflow: hidden;
+.center-display::after {
+    transform: rotate(-45deg);
 }
-.quarter {
-  display: inline-block;
-  float: left;
-  margin: 0;
-  padding: 0;
-  width: 150px;
-  height: 150px;
 
+.center-display:hover:before, 
+.center-display:hover:after {
+  animation: home-page-animation 2s;
 }
+
+@keyframes home-page-animation {
+  0% {
+    transform: rotate(-45deg);
+  }
+  25% {
+   transform: rotate(-45deg); 
+  }
+  50% {
+    background-color: black;
+  }
+}
+
+.center-display-text-top {
+  margin: 10px;
+  padding: 20px;
+  font-size: 40px;
+  z-index: 1;
+}
+
+.center-display-text {
+  margin: 10px;
+  padding: 20px;
+  font-size: 40px;
+}
+
+.home-icon-mountain:hover {
+  background-color: blue;
+}
+.home-icon-grain:hover {
+  color: yellow;
+}
+.home-icon-tree:hover {
+  color: green;
+}
+
+@media only screen and (max-width: 770px) {
+  .center-display::before,
+  .center-display::after {
+    height: 0px;
+  }
+  .center-display:hover:before,
+  .center-display:hover:after {
+    height: 0px;
+  }
 }
