@@ -220,6 +220,15 @@ ol.list-numbers li:before {
   font-size: 40px;
 }
 
+.home-icon-mountain {
+  color: white;
+}
+.home-icon-grain {
+  color: white;
+}
+.home-icon-tree {
+  color: white;
+}
 .home-icon-mountain:hover {
   background-color: blue;
 }
