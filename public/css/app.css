@@ -229,6 +229,12 @@ ol.list-numbers li:before {
 .home-icon-tree {
   color: white;
 }
+.home-icon-cookbook {
+  color: white;
+}
+.home-icon-cookbook:hover {
+  color: red;
+}
 .home-icon-mountain:hover {
   background-color: blue;
 }

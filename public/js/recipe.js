@@ -163,7 +163,7 @@ app.controller("RecipeViewController", ["$scope", "$rootScope", "tabCtrl", "curT
 
 }]);
 
-//Find Recipe Controllerf
+//Find Recipe Controller
 app.controller("FindRecipeController", ["$scope", "$rootScope", "$http", "tabCtrl", "curTab",
   function ($scope, $rootScope, $http, tabCtrl, curTab) {
 

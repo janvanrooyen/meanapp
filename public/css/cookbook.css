@@ -1,0 +1,31 @@
+.bg-big { /*index page background image */
+  /*  background-image: url(/img/portfolio/eveningglow/eveningglow_7.jpg); */
+  /*  background-color: black; */
+   
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-size: cover;
+    background-position: bottom;
+    color: #fff;
+    text-align: center;
+    text-rendering: optimizeLegibility;
+    z-index: -1;
+} 
+
+.bg-big:after {
+    content: '';
+    position: fixed;
+    top: 60px;
+    right: 10px;
+    bottom: 10px;
+    left: 10px;
+    border: 1px solid rgba(255,255,255,.2);
+  }
+
+  .row-margin {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }

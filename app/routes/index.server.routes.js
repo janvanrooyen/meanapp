@@ -3,8 +3,6 @@ module.exports = function(app) {
 	app.get('/', index.render);
 	app.route('/navigation')
         .get(index.renderNavigation);   
-    app.route('/navigation_BS4')
-        .get(index.renderNavigation_BS4);
     app.route('/recipes')
     	.get(index.renderRecipes);
     app.route('/add-recipe')
