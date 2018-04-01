@@ -9,8 +9,9 @@
     <link rel="stylesheet" href="css/cookbook.css" />
     <link rel="stylesheet" href="ps/photoswipe.css">
     <link rel="stylesheet" href="ps/default-skin/default-skin.css">  
+    <%- include ../googletrack.ejs %>
   </head>
-    <body>
+    <body ng-cloak>
   	  <div ng-include="'/navigation'"></div>
         <div class="container">
           <div ng-controller="CookBookListCtrl">
@@ -22,7 +23,24 @@
                 <h3>Search: <input type="text" ng-model="search"></h3>
               </div>
             </div>
-            <div class="row row-margin">
+            <div class="row row-margin text-center">
+              <div class="dropdown">
+                <button type="button" class="btn btn-primary btn-lg cookbookbrowsebutton dropdown-toggle" data-toggle="dropdown" ng-click="showEntree = false; showDessert=false; showSalad=false; showSides=false; showPasta=false; showSoup=false; showPie=false; showSauce=false">Browse <span class="glyphicon glyphicon-triangle-bottom floatright"></span></button>
+                <ul class="dropdown-menu cookbookdropdowns">
+                  <li class="cookbookdropdown_li" ng-click="showEntree = ! showEntree; showDessert=false; showSalad=false; showSides=false; showPasta=false; showSoup=false; showPie=false; showSauce=false">Entree</li>
+                  <li class="cookbookdropdown_li" ng-click="showDessert = ! showDessert; showEntree=false; showSalad=false; showSides=false; showPasta=false; showSoup=false; showPie=false; showSauce=false">Dessert</li>
+                  <li class="cookbookdropdown_li" ng-click="showSalad = ! showSalad; showEntree=false; showDessert=false; showSides=false; showPasta=false; showSoup=false; showPie=false; showSauce=false">Salad</li>
+                  <li class="cookbookdropdown_li" ng-click="showSides = ! showSides; showEntree=false; showDessert=false; showSalad=false; showPasta=false; showSoup=false; showPie=false; showSauce=false">Sides<li>
+                  <li class="cookbookdropdown_li" ng-click="showPasta = ! showPasta; showEntree=false; showDessert=false; showSalad=false; showSides=false; showSoup=false; showPie=false; showSauce=false">Pasta</li>
+                  <li class="cookbookdropdown_li" ng-click="showSoup = ! showSoup; showEntree=false; showDessert=false; showSalad=false; showSides=false; showPasta=false; showPie=false; showSauce=false">Soup</li>
+                  <li class="cookbookdropdown_li" ng-click="showPie = ! showPie; showEntree=false; showDessert=false; showSalad=false; showSides=false; showPasta=false; showSoup=false; showSauce=false">Pie</li>
+                  <li class="cookbookdropdown_li" ng-click="showSauce = ! showSauce; showEntree=false; showDessert=false; showSalad=false; showSides=false; showPasta=false; showSoup=false; showPie=false">Sauce</li> 
+                </ul>
+              </div> 
+                  
+              
+            </div>
+            <div class="row row-margin cookbookbuttons">
               <div class="col-sm-3">
                 <button type="button" class="btn btn-primary btn-lg btn-block" ng-click="showEntree = ! showEntree; showDessert=false; showSalad=false; showSides=false; showPasta=false; showSoup=false; showPie=false; showSauce=false">Entree</button>
                 <p></p>
@@ -37,7 +55,7 @@
                 <button type="button" class="btn btn-primary btn-lg btn-block" ng-click="showSides = ! showSides; showEntree=false; showDessert=false; showSalad=false; showPasta=false; showSoup=false; showPie=false; showSauce=false">Sides</button>
               </div>              
             </div>
-            <div class="row row-margin">
+            <div class="row row-margin cookbookbuttons">
               <div class="col-sm-3">
                 <button type="button" class="btn btn-primary btn-lg btn-block" ng-click="showPasta = ! showPasta; showEntree=false; showDessert=false; showSalad=false; showSides=false; showSoup=false; showPie=false; showSauce=false">Pasta</button>
               </div>
@@ -52,7 +70,7 @@
               </div>              
             </div> 
             <div class="row row-margin">
-              <div class="col-sm-3"> <!-- Start Left Column -->
+              <div class="col-sm-3 text-center"> <!-- Start Left Column -->
                 <div ng-show="(filteredData = (item | filter:search)) && filteredData.length >= 1 && search && search.length >= 0"> 
                   <h2>Search Results:</h2>
                   <div ng-repeat="z in filteredData">

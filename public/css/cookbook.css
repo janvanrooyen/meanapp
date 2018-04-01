@@ -29,3 +29,37 @@
     margin-top: 20px;
     margin-bottom: 20px;
   }
+
+  .floatright {
+    float: right;
+  }
+
+  .cookbookbrowsebutton {
+    display: none;
+  }
+
+  @media only screen and (max-width: 770px) {
+  .cookbookbuttons {
+    display: none;    
+  }
+  .cookbookbrowsebutton {
+    display: initial;
+    width: 75%;
+  }
+
+  .cookbookdropdowns {
+    width: 75%;
+    position: inherit;
+    margin: auto;
+    float: inherit;
+    text-align: center;
+    }
+    .cookbookdropdown_li {
+        padding: 1%;
+    }
+    .cookbookdropdown_li:hover {
+        background: grey;
+    }
+
+
+}
