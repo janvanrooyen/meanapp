@@ -48,8 +48,8 @@ appGallery.factory('thumbnailGallery', function(){
 		},
 		{
 			src: 'img/portfolio/bw/bw_4.jpg',
-			w:3200,
-			h:1000
+			w:2100,
+			h:1500
 		},
 		{
 			src: 'img/portfolio/bw/bw_5.jpg',
@@ -110,6 +110,26 @@ appGallery.factory('thumbnailGallery', function(){
 			src: 'img/portfolio/bw/bw_16.jpg',
 			w:2100,
 			h:1500
+		},
+				{
+			src: 'img/portfolio/bw/bw_17.jpg',
+			w:2100,
+			h:1500
+		},
+		{
+			src: 'img/portfolio/bw/bw_18.jpg',
+			w:2100,
+			h:1500
+		},
+		{
+			src: 'img/portfolio/bw/bw_19.jpg',
+			w:2500,
+			h:600
+		},
+		{
+			src: 'img/portfolio/bw/bw_20.jpg',
+			w:2100,
+			h:1500
 		}
 	]; 
 
@@ -146,7 +166,7 @@ appGallery.factory('thumbnailGallery', function(){
 		},
 		{
 			src: 'img/portfolio/randoms/randoms_7.jpg',
-			w:2180,
+			w:2100,
 			h:1500
 		},
 		{
@@ -239,8 +259,8 @@ appGallery.factory('thumbnailGallery', function(){
 		},
 		{
 			src: 'img/portfolio/nature/nature_5.jpg',
-			w:1880,
-			h:2700
+			w:2100,
+			h:1500
 		},
 		{
 			src: 'img/portfolio/nature/nature_6.jpg',
@@ -269,56 +289,11 @@ appGallery.factory('thumbnailGallery', function(){
 		},
 		{
 			src: 'img/portfolio/nature/nature_11.jpg',
-			w:2700,
-			h:700
+			w:2100,
+			h:1500
 		},
 		{
 			src: 'img/portfolio/nature/nature_12.jpg',
-			w:2100,
-			h:1500
-		},
-		{
-			src: 'img/portfolio/nature/nature_13.jpg',
-			w:2100,
-			h:1500
-		},
-		{
-			src: 'img/portfolio/nature/nature_14.jpg',
-			w:2100,
-			h:1500
-		},
-		{
-			src: 'img/portfolio/nature/nature_15.jpg',
-			w:2100,
-			h:1500
-		},
-		{
-			src: 'img/portfolio/nature/nature_16.jpg',
-			w:2100,
-			h:1500
-		},
-		{
-			src: 'img/portfolio/nature/nature_17.jpg',
-			w:2100,
-			h:1500
-		},
-		{
-			src: 'img/portfolio/nature/nature_18.jpg',
-			w:2100,
-			h:1500
-		},
-		{
-			src: 'img/portfolio/nature/nature_19.jpg',
-			w:2100,
-			h:1500
-		},
-		{
-			src: 'img/portfolio/nature/nature_20.jpg',
-			w:2100,
-			h:1500
-		},
-		{
-			src: 'img/portfolio/nature/nature_21.jpg',
 			w:2100,
 			h:1500
 		}
@@ -392,6 +367,26 @@ appGallery.factory('thumbnailGallery', function(){
 			src: 'img/portfolio/eveningglow/eveningglow_8.jpg',
 			w:2100,
 			h:1500
+		},
+		{
+			src: 'img/portfolio/eveningglow/eveningglow_9.jpg',
+			w:2100,
+			h:1500
+		},
+		{
+			src: 'img/portfolio/eveningglow/eveningglow_10.jpg',
+			w:2100,
+			h:1500
+		},
+		{
+			src: 'img/portfolio/eveningglow/eveningglow_11.jpg',
+			w:2100,
+			h:1500
+		},
+		{
+			src: 'img/portfolio/eveningglow/eveningglow_12.jpg',
+			w:2100,
+			h:1500
 		}	
 	];
 
@@ -463,24 +458,9 @@ appGallery.factory('thumbnailGallery', function(){
 			src: 'img/portfolio/puertorico/puertorico_7.jpg',
 			w:2100,
 			h:1500
-		},
-		{
-			src: 'img/portfolio/puertorico/puertorico_8.jpg',
-			w:2100,
-			h:1500
 		},		
 		{
-			src: 'img/portfolio/puertorico/puertorico_9.jpg',
-			w:2100,
-			h:1500
-		},
-		{
 			src: 'img/portfolio/puertorico/puertorico_10.jpg',
-			w:2100,
-			h:1500
-		},
-		{
-			src: 'img/portfolio/puertorico/puertorico_11.jpg',
 			w:2100,
 			h:1500
 		},		
@@ -554,6 +534,11 @@ appGallery.factory('thumbnailGallery', function(){
 		},		
 		{
 			src: 'img/portfolio/zooshots/zooshots_9.jpg',
+			w:2100,
+			h:1500
+		},
+		{
+			src: 'img/portfolio/zooshots/zooshots_10.jpg',
 			w:2100,
 			h:1500
 		}
