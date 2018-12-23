@@ -537,7 +537,12 @@ appGallery.factory('thumbnailGallery', function(){
 			src: 'img/portfolio/eveningglow/eveningglow_18.jpg',
 			w:2100,
 			h:1500
-		}
+		},
+		{
+			src: 'img/portfolio/eveningglow/eveningglow_19.jpg',
+			w:2100,
+			h:1500
+		},
 	];
 
 	var hotair = [
