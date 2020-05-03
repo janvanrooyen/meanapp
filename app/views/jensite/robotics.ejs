@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en" ng-app="jensite">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ROBOTICS</title>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/jensite.css" />
+    <%- include ../googletrack.ejs %>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-100827688-1"></script>
+
+  </head>
+    <body ng-controller="ShowHide">
+      <div ng-include="'/jensite/jennavigation'"></div>
+      <div class="container">
+        <div class="bg-robotics"></div>
+        <div class="row">
+          <div class="col-md-5">
+            <div class="row">
+              <iframe width="420" height="315"src="https://www.youtube.com/embed/N_9-B0VKupw"></iframe>
+            </div>
+          </div>
+          <div class="col-md-7">
+            <h1>Project Overview</h1>
+            <h3><p>For the Robotics portion of the course I chose to use the <a href="https://store.birdbraintechnologies.com/products/hummingbird-duo-base-kit">Hummingbird DUO Base Kit by BirdBrain Technologies </a>. The Hummingbird DUO Base Kit allows the creator to design, build, and program a robot that contains moving parts and lights. Included in the kit are single-color and tri-color LED lights, Servo motors, light sensor, and temperature sensor.</p></h3>
+          </div>
+        </div>
+        <div class="row">
+          <ul class="list-group">
+            <!--Section 1 -->
+<!--            <div ng-click="showme1= !showme1">
+              <li class="list-group-item list-group-item-info">Project Overview</li>
+            </div>
+            <div ng-click="showme1= !showme1">
+              <div ng-show="showme1">
+                <p>Placeholder for Section 1 Text</p>
+              </div>
+            </div>
+            <!-- Section 2 -->
+            <div ng-click="showme2= !showme2">
+              <li class="list-group-item list-group-item-info">Standards / Objectives</li>
+            </div>
+            <div ng-click="showme2= !showme2">
+              <div class="row" ng-show="showme2">
+                <div class="col-md-8">
+                  <h4><p>Using the Hummingbird DUO, I wanted to create a working model to demonstrate the scientific concept of photosynthesis as it occurs in a plant such as a leaf on a tree. This corresponds to the Nebraska College and Career Ready Standards for Science:</p>
+                  <br>
+                  <p><em>SC.HS.8.3.A Use a model to illustrate how photosynthesis transforms light energy into stored chemical energy.</em></p>
+                  <br>
+                  <u>Objectives:</u>
+                  <br>
+                  <p>Content— The students will create a model to demonstrate the process of photosynthesis and the transformation of light energy into stored chemical energy.</p>
+                  <br>
+                  <p>Language—Using Hummingbird DUO base kit pairs of students will create a model depicting photosynthesis using at least two components.</p>
+                  <br>
+                  <p>Student-friendly— I can create a model of photosynthesis that uses at least two components from the Hummingbird DUO base kit.
+                  </p></h4>
+                </div>
+                <div class="col-md-4">
+                  <div ng-show="showme2">
+                    <img class="img-responsive" src="../img/jensite/robotics_8.jpg">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--Section 3 -->
+            <div ng-click="showme3= !showme3">
+              <li class="list-group-item list-group-item-info">Resources and Materials</li>
+            </div>
+            <div ng-click="showme3= !showme3">
+              <div ng-show="showme3">
+                <div class="row">
+                  <div class="col-md-8">
+                    <h4><p>In order to create my working model of photosynthesis I used the following materials: Hummingbird DUO Base Kit, a computer to run the coding software, BirdBrain Robot Server with Snap! software installed on my computer, and a cardboard box to insert the components through with the wires and electronics hidden on the back side. Additional resources like tape, scissors, and construction paper were also used during the construction phase. It will need to have a USB connection to a computer and will need access to a power outlet.</p>
+                    <br>
+                    <p>In order to run the Hummingbird DUO Base Kit, you will need to download the BirdBrain Robot Server from the BirdBrain Technologies Website (BirdBrain Technologies, n.d.). After downloading and opening you should have the option to use either Snap! or Scratch to program the Hummingbird DUO. I chose to use Snap! which a free program that allows the students to use a “visual, drag-and-drop programming language” to bring their Hummingbird DUO to life (Snap!, n.d., para. 1).</p>
+                    <br>
+                    <p>In the building of my model I began with a cardboard box as my display board. Using colored construction paper, I created a landscape with blue sky and grass. I cut a sun shape out of yellow construction paper and cut a flower with stem shape from pink and light green. Using the same light green, I cut a large leaf shape, this exaggerated large leaf was where I zoomed in on a chloroplast (an oval cut out of darker green) to show what is happening during the process of photosynthesis. My next step was to attach the pieces to the box using tape: sun in the top left corner, my flower in the lower left with the large exaggerated leaf extending towards the right and the dark green chloroplast attached to the center of the exaggerated leaf. In the space between the sun and the large leaf I used a sharp tool to poke three holes making them large enough to stick one LED light from the Hummingbird DUO Base Kit in each hole. The order of the lights starting closest to the sun was red single LED light, then the two tri-color lights. I also poked two holes into the center of the sun. In one hole I put the yellow single LED light, in the second I put the light sensor. In the chloroplast I inserted the Servo motors with the single pointer spin piece. I put one on the left side of the chloroplast and one on the right side in roughly the center. I arranged the pointers so that the left one was pointing at the 12 o’clock position and the right one at the 6 o’clock position. All the wires were able to be hidden inside of the box.</p></h4>
+                  </div>
+                  <div class="col-md-4">
+                    <img class="img-responsive" src="../img/jensite/robotics_2.jpg">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="imagecentered">
+                      <img display="inline-block" class="img-responsive" src="../img/jensite/robotics_3.jpg">
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="imagecentered">
+                      <img class="img-responsive" src="../img/jensite/robotics_4.jpg">
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-8">
+                    <h4><p>My next step was to add the various labels of the chemical components that serve as the reactants and products for the two steps of photosynthesis. On the left Servo spinner I attached a green stack of ovals to represent the chlorophyll and the light-dependent reaction. At the 12 o’clock position I put water-drop shapes with H2O written on them, at the 2 o’clock position I put a tag with NADP+ on it, and at the 3 o’clock position I put a tag with ADP on it. Then at the 7 o’clock position I put a tag with O2 on it, at 5 o’clock position I put a tag with NADPH on it, below that I put a tag with ATP on it. This collectively shows that [sunlight + water + NADP+ + ADP] all enter the chlorophyll, and after the reaction takes place: [oxygen + NADPH + ATP] are created. </p>
+                    <br>
+                    <p>On the right Servo spinner, I attached a tag with Calvin Cycle written on it. This side will represent the light independent reaction that takes place in the chloroplast. I added a tag with CO2 written on it to the 5 o’clock position (and the tags and NADPH and ATP were now in the 7 o’clock position from my placement in the previous step). I also added a tag with C6H12O6/glucose written on it that I put in the 1 o’clock position (this was next to the tags with NADP+ and ADP which are in the 11 o’clock position from my placement in the previous step). This collectively shows that [carbon dioxide + NADPH + ATP] all enter the Calvin Cycle and after the reaction takes place: [glucose + NADP+ + ADP] are produced.</p>
+                    <br>
+                    <p>Using the Snap! software it was time to code and get the unit moving and lighting up. The premise with this is that when the yellow LED “sun” is on then the light sensor will turn on the red and blue LED blinking “sunlight” waves that travel to the chloroplast. This activates the left Servo motor to rotate from the reactants [sunlight + water + NADP+ + ADP] at the 12 o’clock position to the products [oxygen + NADPH + ATP] at the 6 o’clock region; thus, demonstrating the light dependent reaction that takes. At the same time the right Servo motor is rotating from the light independent reactants [carbon dioxide + NADPH + ATP] at the 6 o’clock position to the products [glucose + NADP+ + ADP] at the 12 o’clock position. When a black storm cloud blocks the light sensor then all lights shut off and Servo motors stop rotating. When the black storm cloud is removed and senses light again the lights begin flashing again and motors begin rotating. </p></h4>
+                  </div>
+                  <div class="col-md-4">
+                    <img class="img-responsive" src="../img/jensite/robotics_9.jpg">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Section 4 -->
+            <div ng-click="showme4= !showme4">
+              <li class="list-group-item list-group-item-info">Materials Budget List</li>
+            </div>
+            <div ng-click="showme4= !showme4">
+              <div ng-show="showme4">
+                <h4><p>In order to create the product that I have described above I have included a materials’ budget list. </p></h4>
+                <div class="imagecentered">
+                  <img class="img-responsive" src="../img/jensite/robotics_10.jpg">
+                </div>
+              </div>
+            </div>
+            <!-- Section 5 -->
+            <div ng-click="showme5= !showme5">
+              <li class="list-group-item list-group-item-info">Engineering Design Process</li>
+            </div>
+            <div ng-click="showme5= !showme5">
+              <div ng-show="showme5">
+                <div class="row">
+                  <div class="col-md-8">
+                    <h4><p>
+                      <u>Ask:</u> How can I build a model to represent how photosynthesis converts light energy into chemical energy?</p>
+                      <br>
+                      <p><u>Imagine:</u> Brainstorm ideas as a group of how to illustrate and model this concept.</p>
+                      <br>
+                      <p><u>Plan:</u> Sketch out a drawing of what it might look like, think about what materials they will need to construct it.</p>
+                      <br>
+                      <p><u>Create:</u> Bring that model to life! Build it and work on computer coding to get movement and lights.</p>
+                      <br>
+                      <p><u>Improve:</u> Certain aspects not working? Don’t give up! Keep working on the code to orchestrate movements and lights.</p>
+                    </h4>
+                  </div>
+                  <div class="col-md-4">
+                    <img class="img-responsive" src="../img/jensite/robotics_11.jpg">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Section 6 -->
+            <div ng-click="showme6= !showme6">
+              <li class="list-group-item list-group-item-info">Nebraska Steam Instruction Resource Evaluation Rubric</li>
+            </div>
+            <div ng-click="showme6= !showme6">
+              <div ng-show="showme6">
+                <div class="row">
+                  <div class="col-md-8">
+                    <h4>
+                      <p>This rubric is a guide for the development and evaluation of instructional resources with STEM activities to be incorporated in school-based, work-based, family-based, community-based learning environments. The purpose of this rubric is to promote rich opportunities for development of critical thinking, creativity, collaboration and communication (4C) skills through the use of quality, well-designed, and intentional instructional resources (Nebraska Department of Education, 2016).</p>
+                      <br>
+                      <p>How does the resource promote the understanding of concepts across content areas?<br>
+                      <em>Does Not Meet</em> - I feel the resource is useful as an addition to a culminating project; but does not assist in providing the learner with clear application of concepts.</p>
+                      <br>
+                      <p>How does the resource promote the acquisition of proficiency toward a recognized, grade appropriate standard?<br>
+                      <em>Models Excellence</em> - I feel this resource does act as a "starting point" for the learner to use it in order to meet a grade appropriate standard</p>
+                      <br>
+                      <p>How does the resource give the learner first-hand experience?<br>
+                      <em>Models Excellence</em> - I think this resource would work best as a collaborative resource. The planning, building, and coding would be most beneficial for a group.</p>
+                      <br>
+                      <p>How does the resource promote critical thinking, creativity, collaboration and communication (4C) skills through STEM Skills in a school-based, work-based, family-based, or community-based application? Science: Engage in 3-dimensional learning to construct scientific understanding • Technology: Use and apply technology • Engineering: Use engineering design process • Mathematics: Solve and communicate problems using mathematics<br>
+                      <em>Meets</em> - As collaborative teams, the resource encourages the learners to use the tools provided to solve a problem, calling upon the "4C"s</p>
+                    </h4>
+                  </div>
+                  <div class="col-md-4">
+                    <img class="img-responsive" src="../img/jensite/robotics_12.jpg">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Section 7 -->
+            <div ng-click="showme7= !showme7">
+              <li class="list-group-item list-group-item-info">References</li>
+            </div>
+            <div ng-click="showme7= !showme7">
+              <div ng-show="showme7">
+                <p>BirdBrain Technologies. (n.d.). <em>BirdBrain Software.</em> Retrieved from <a href="https://www.birdbraintechnologies.com/software/">https://www.birdbraintechnologies.com/software/</a></p><br>
+
+                <p>BirdBrain Technologies. (2017). <em>Snap Programming.</em>Retrieved from <a href="https://www.birdbraintechnologies.com/downloads/comics/Hummingbird-Duo-Snap-Comic.pdf">https://www.birdbraintechnologies.com/downloads/comics/Hummingbird-Duo-Snap-Comic.pdf</a></p><br>
+
+                <p>Nebraska Department of Education. (2016). <em>Nebraska STEM Instructional Resource Evaluation Rubric</em>. Retrieved from <a href="https://unomaha.az1.qualtrics.com/jfe/form/SV_0jJSoOmsXBPd7w1">https://unomaha.az1.qualtrics.com/jfe/form/SV_0jJSoOmsXBPd7w1</a></p><br>
+
+                <p>Nebraska Department of Education. (2017). <em>Nebraska’s College and Career Ready Standards for Science[PDF]</em>. Retrieved from <a href="https://cdn.education.ne.gov/wp-content/uploads/2017/10/">https://cdn.education.ne.gov/wp-content/uploads/2017/10/</a></p><br>
+
+                <p>Nebraska_Science_Standards_Final_10_23.pdf
+                Snap! (n.d.). <em>About Snap!</em> Retrieved from <a href="https://snap.berkeley.edu/about">https://snap.berkeley.edu/about</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+ <!--   <script src="js/vendor/what-input.min.js"></script> -->
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+    <script src="../js/jensite.js"></script>
+  </body>
+</html>
