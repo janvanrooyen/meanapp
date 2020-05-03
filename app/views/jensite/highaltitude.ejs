@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="en" ng-app="jensite">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HIGH-ALTITUDE BALLON </title>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/jensite.css" />
+    <%- include ../googletrack.ejs %>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-100827688-1"></script>
+
+  </head>
+    <body ng-controller="ShowHide">
+      <div ng-include="'/jensite/jennavigation'"></div>
+      <div class="container">
+        <div class="bg-balloon"></div>
+        <div class="row">
+          <div class="col-md-5">
+            <div class="row">
+              <iframe width="420" height="315"src="https://www.youtube.com/embed/ZoaWDUu1UwY"></iframe>
+              <iframe width="420" height="315"src="https://www.youtube.com/embed/tO-Uyv4YR34"></iframe>
+            </div>
+          </div>
+          <div class="col-md-7">
+            <h1>Project Overview</h1>
+            <h3><p>The last challenge for my course was to design an experiment that could be tested using a High-Altitude Balloon and a PocketLab Voyager. High-Altitude Balloons are special balloons capable of ascending into the upper atmospheres, they can carry payloads containing instruments to gather data during the journey. The PocketLab Voyager, which is made by Myriad Sensors Inc. is a mini durable sensor capable of taking real-time data measurements. These measurements include position, velocity, acceleration, angular velocity, altitude, magnetic field, light intensity, and weather conditions like ambient temperature, humidity, barometric pressure, dew point, and heat index. All this data is instantly sent to the PocketLab App.</p></h3>
+          </div>
+        </div>
+        <div class="row">
+          <ul class="list-group">
+            <!--Section 1 -->
+<!--            <div ng-click="showme1= !showme1">
+              <li class="list-group-item list-group-item-info">Project Overview</li>
+            </div>
+            <div ng-click="showme1= !showme1">
+              <div ng-show="showme1">
+                <p>Placeholder for Section 1 Text</p>
+              </div>
+            </div>
+            <!-- Section 2 -->
+            <div ng-click="showme2= !showme2">
+              <li class="list-group-item list-group-item-info">Standards / Objectives</li>
+            </div>
+            <div ng-click="showme2= !showme2">
+              <div class="row" ng-show="showme2">
+                <div class="col-md-8">
+                  <h4><p>Using an “egg-onaut” I wanted to devise a capsule to protect it during the ascent, descent, and collision impact while in the payload pod of the High-Altitude Balloon. This corresponds to the Nebraska College and Career Ready Standards for Science:</p>
+                  <br>
+                  <p><em>SC.HS.1.1.C Apply science and engineering ideas to design, evaluate, and refine a device that minimizes the force on a macroscopic object during a collision</em></p>
+                  <br>
+                  <p>Using PocketLab Voyager, students could also get data about acceleration and velocity to calculate the force acting on their egg-onaut. This corresponds to the Nebraska College and Career Ready Standards for Science:</p>
+                  <br>
+                  <p><em>SC.HS.1.1.A Analyze data to support the claim that Newton's Second Law of Motion describes the mathematical relationship among the net force on a macroscopic object, its mass, and its acceleration</em></p>
+                  <br>
+                  <u>Objectives:</u>
+                  <br>
+                  <p>Content— The students will use scientific and engineering principles to design, evaluate, and refine a device to minimize the force on an object during a collision.</p>
+                  <br>
+                  <p>Language— Using materials from home or provided the students will design a capsule to protect an egg during the ascent, descent, and impact with Earth while secured in a payload pod attached to a High-Altitude Balloon. .</p>
+                  <br>
+                  <p>Student-friendly— I can make a capsule to protect an egg when I put it in a pod attached to a High-Altitude Balloon.
+                  </p></h4>
+                </div>
+                <div class="col-md-4">
+                  <div ng-show="showme2">
+                    <img class="img-responsive" src="../img/jensite/robotics_8.jpg">
+                    <img class="img-responsive" src="../img/jensite/balloon_1.jpg">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--Section 3 -->
+            <div ng-click="showme3= !showme3">
+              <li class="list-group-item list-group-item-info">Resources and Materials</li>
+            </div>
+            <div ng-click="showme3= !showme3">
+              <div ng-show="showme3">
+                <div class="row">
+                  <div class="col-md-8">
+                    <h4><p>High-Altitude Balloons are latex weather balloons designated by their weights, we will be using a 1,200 g weather balloon and using the preferred lifting gas of helium to inflate it at launch. Attached beneath the weather balloon will be a parachute, set to deploy upon descent.  Below the parachute will be the electronic components, including GPS positioning equipment that will allow us to track the movements of the balloon and help us with the retrieval after the components return to earth. The last thing to be attached to the weather balloon is a small box known as the payload container. It is inside the payload container that the experimental components will be housed. The payload will be made of a Styrofoam box which will act as “thermal control”, have electrical and data acquisition and control components along with our sensors, and any structural components to hold the pieces in place within the payload container. For the HAB to travel as high as possible, approximately 20 miles above the Earth’s surface, the payload container cannot exceed 12lbs. In order to complete this portion of the experiment I was partnering with the University of Nebraska-Omaha College of Education.</p>
+                    <br>
+                    <p>For my experimental component I used an egg, some bubble wrap, and zip-ties to wrap and secure my egg to my mock pod. I also used zip-ties to attach the PocketLab Voyager to the inside of my pod. In order to gather data from the Voyager during my ascent and descent, I had to log on to thepocketlab.com/app from Chrome web browser and sync the Voyager with my computer. This allowed me to collect the data from the Voyager.</p>
+                    <br>
+                    <p></p></h4>
+                  </div>
+                  <div class="col-md-2">
+                    <img class="img-responsive" src="../img/jensite/balloon_2.jpg">
+                  </div>
+                  <div class="col-md-2">
+                    <img class="img-responsive" src="../img/jensite/balloon_3.jpg">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-3">
+                    <div class="imagecentered">
+                      <img display="inline-block" class="img-responsive" src="../img/jensite/balloon_4.jpg">
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="imagecentered">
+                      <img class="img-responsive" src="../img/jensite/balloon_5.jpg">
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="imagecentered">
+                      <img class="img-responsive" src="../img/jensite/balloon_6.jpg">
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="imagecentered">
+                      <img class="img-responsive" src="../img/jensite/balloon_7.jpg">
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-8">
+                    <h4><p>The assembly of my project is quite simple. I used some bubble wrap to wrap around an egg and a piece of tape to secure the bubble wrap capsule. Due to our inability to get together as a class, I used an old shoe box to represent my pod that would go up with a HAB. I poked two holes in the side of my shoebox and used a zip-tie to secure the egg capsule to the inside sidewall of the shoebox. On the adjacent sidewall I poked four holes so that I could create a “+” with two zip-ties and secure the Voyager to the sidewall of the shoebox and prevent it from moving around during its “space” mission. In order to collect data, I had to visit thepocketlab.com/app using Chrome on my laptop. The first step was to sync the Voyager with my computer, this was easily done by pushing the one and only button on the Voyager and waiting for them to sync using Bluetooth. After they synced, the Voyager was ready to collect data and the website was ready to record it. The next step was to set the Voyager up in ‘Memory Mode’, this way the Voyager and my computer did not need to be in constant connection with each other, as would occur if the Voyager went up in the HAB pod. In settings I selected Memory Mode. In Memory Mode Setup I was able to select Clear Data, so that I could start with fresh data, Enable the sensors that I wanted data from, Set the Data Rate, and begin Recording data. When the test flight was over, I was able to Download the Data for analysis.</p></h4>
+                  </div>
+                  <div class="col-md-4">
+                    <img class="img-responsive" src="../img/jensite/balloon_8.jpg">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Section 4 -->
+            <div ng-click="showme4= !showme4">
+              <li class="list-group-item list-group-item-info">Materials Budget List</li>
+            </div>
+            <div ng-click="showme4= !showme4">
+              <div ng-show="showme4">
+                <h4><p>In order to create the product that I have described above I have included a materials’ budget list. </p></h4>
+                <div class="imagecentered">
+                  <img class="img-responsive" src="../img/jensite/balloon_9.jpg">
+                </div>
+              </div>
+            </div>
+            <!-- Section 5 -->
+            <div ng-click="showme5= !showme5">
+              <li class="list-group-item list-group-item-info">Engineering Design Process</li>
+            </div>
+            <div ng-click="showme5= !showme5">
+              <div ng-show="showme5">
+                <div class="row">
+                  <div class="col-md-8">
+                    <h4><p>
+                      <u>Ask:</u> What materials would provide the best protection for an egg during ascent, descent, and impact?</p>
+                      <br>
+                      <p><u>Imagine:</u> Brainstorm as a group about the types of materials that would make good insulation. Take into consideration the size and weight. Both are limited due to the size of the payload and overall weight for maximum lift. </p>
+                      <br>
+                      <p><u>Plan:</u> Sketch a drawing of the overall capsule and think about what materials they will need to construct it. Plan to bring materials from home if unavailable at school.</p>
+                      <br>
+                      <p><u>Create:</u> Build the capsule, bringing materials from home to use. Ensure that the size and weight fall within the guidelines..</p>
+                      <br>
+                      <p><u>Improve:</u> Run test drops off stairwells or other high locations. Check for status of egg and make modifications to the design as needed.</p>
+                    </h4>
+                  </div>
+                  <div class="col-md-4">
+                    <img class="img-responsive" src="../img/jensite/robotics_11.jpg">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Section 6 -->
+            <div ng-click="showme6= !showme6">
+              <li class="list-group-item list-group-item-info">Nebraska Steam Instruction Resource Evaluation Rubric</li>
+            </div>
+            <div ng-click="showme6= !showme6">
+              <div ng-show="showme6">
+                <div class="row">
+                  <div class="col-md-8">
+                    <h4>
+                      <p>This rubric is a guide for the development and evaluation of instructional resources with STEM activities to be incorporated in school-based, work-based, family-based, community-based learning environments. The purpose of this rubric is to promote rich opportunities for development of critical thinking, creativity, collaboration and communication (4C) skills through the use of quality, well-designed, and intentional instructional resources (Nebraska Department of Education, 2016).</p>
+                      <br>
+                      <p>How does the resource promote the understanding of concepts across content areas?<br>
+                      <em>Meets</em> - I feel the both resources can be used to directly address content areas.</p>
+                      <br>
+                      <p>How does the resource promote the acquisition of proficiency toward a recognized, grade appropriate standard?<br>
+                      <em>Models Excellence</em> - I feel this resource can help learners acquire grade-appropriate content knowledge.</p>
+                      <br>
+                      <p>How does the resource give the learner first-hand experience?<br>
+                      <em>Meets</em> - I think this resource would allow learners to have some responsibility in the activity.</p>
+                      <br>
+                      <p>How does the resource promote critical thinking, creativity, collaboration and communication (4C) skills through STEM Skills in a school-based, work-based, family-based, or community-based application? Science: Engage in 3-dimensional learning to construct scientific understanding • Technology: Use and apply technology • Engineering: Use engineering design process • Mathematics: Solve and communicate problems using mathematics<br>
+                      <em>Models Excellence </em> - As collaborative teams, the resource encourages the learners to use the tools provided to solve a problem, calling upon the "4C"s (critical thinking, creativity, collaboration and communication).</p>
+                    </h4>
+                  </div>
+                  <div class="col-md-4">
+                    <img class="img-responsive" src="../img/jensite/robotics_12.jpg">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Section 7 -->
+            <div ng-click="showme7= !showme7">
+              <li class="list-group-item list-group-item-info">References</li>
+            </div>
+            <div ng-click="showme7= !showme7">
+              <div ng-show="showme7">
+              <p>Nebraska Department of Education. (2016). <em>Nebraska STEM Instructional Resource Evaluation Rubric</em>. Retrieved from <a href="https://unomaha.az1.qualtrics.com/jfe/form/SV_0jJSoOmsXBPd7w1">https://unomaha.az1.qualtrics.com/jfe/form/SV_0jJSoOmsXBPd7w1</a></p>
+              <br>
+              <p>Nebraska Department of Education. (2017). <em>Nebraska’s College and Career Ready Standards for Science [PDF]</em>. Retrieved from <a href="https://cdn.education.ne.gov/wp-content/uploads/2017/10/Nebraska_Science_Standards_Final_10_23.pdf">https://cdn.education.ne.gov/wp-content/uploads/2017/10/Nebraska_Science_Standards_Final_10_23.pdf</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+ <!--   <script src="js/vendor/what-input.min.js"></script> -->
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+    <script src="../js/jensite.js"></script>
+  </body>
+</html>

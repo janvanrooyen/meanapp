@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/cookbook.css" />
     <link rel="stylesheet" href="ps/photoswipe.css">
-    <link rel="stylesheet" href="ps/default-skin/default-skin.css">  
+    <link rel="stylesheet" href="ps/default-skin/default-skin.css">
     <%- include ../googletrack.ejs %>
   </head>
     <body ng-cloak>
@@ -34,11 +34,11 @@
                   <li class="cookbookdropdown_li" ng-click="showPasta = ! showPasta; showEntree=false; showDessert=false; showSalad=false; showSides=false; showSoup=false; showPie=false; showSauce=false">Pasta</li>
                   <li class="cookbookdropdown_li" ng-click="showSoup = ! showSoup; showEntree=false; showDessert=false; showSalad=false; showSides=false; showPasta=false; showPie=false; showSauce=false">Soup</li>
                   <li class="cookbookdropdown_li" ng-click="showPie = ! showPie; showEntree=false; showDessert=false; showSalad=false; showSides=false; showPasta=false; showSoup=false; showSauce=false">Pie</li>
-                  <li class="cookbookdropdown_li" ng-click="showSauce = ! showSauce; showEntree=false; showDessert=false; showSalad=false; showSides=false; showPasta=false; showSoup=false; showPie=false">Sauce</li> 
+                  <li class="cookbookdropdown_li" ng-click="showSauce = ! showSauce; showEntree=false; showDessert=false; showSalad=false; showSides=false; showPasta=false; showSoup=false; showPie=false">Sauce</li>
                 </ul>
-              </div> 
-                  
-              
+              </div>
+
+
             </div>
             <div class="row row-margin cookbookbuttons">
               <div class="col-sm-3">
@@ -50,10 +50,10 @@
               </div>
               <div class="col-sm-3">
                 <button type="button" class="btn btn-primary btn-lg btn-block" ng-click="showSalad = ! showSalad; showEntree=false; showDessert=false; showSides=false; showPasta=false; showSoup=false; showPie=false; showSauce=false">Salad</button>
-              </div> 
+              </div>
               <div class="col-sm-3">
                 <button type="button" class="btn btn-primary btn-lg btn-block" ng-click="showSides = ! showSides; showEntree=false; showDessert=false; showSalad=false; showPasta=false; showSoup=false; showPie=false; showSauce=false">Sides</button>
-              </div>              
+              </div>
             </div>
             <div class="row row-margin cookbookbuttons">
               <div class="col-sm-3">
@@ -64,19 +64,19 @@
               </div>
               <div class="col-sm-3">
                 <button type="button" class="btn btn-primary btn-lg btn-block" ng-click="showPie = ! showPie; showEntree=false; showDessert=false; showSalad=false; showSides=false; showPasta=false; showSoup=false; showSauce=false">Pie</button>
-              </div> 
+              </div>
               <div class="col-sm-3">
                 <button type="button" class="btn btn-primary btn-lg btn-block" ng-click="showSauce = ! showSauce; showEntree=false; showDessert=false; showSalad=false; showSides=false; showPasta=false; showSoup=false; showPie=false">Sauce</button>
-              </div>              
-            </div> 
+              </div>
+            </div>
             <div class="row row-margin">
               <div class="col-sm-3 text-center"> <!-- Start Left Column -->
-                <div ng-show="(filteredData = (item | filter:search)) && filteredData.length >= 1 && search && search.length >= 0"> 
+                <div ng-show="(filteredData = (item | filter:search)) && filteredData.length >= 1 && search && search.length >= 0">
                   <h2>Search Results:</h2>
                   <div ng-repeat="z in filteredData">
                     <div ng-click="openPhotoSwipe(z.page)">
                       <a>{{z.name}}</a>
-                    </div> 
+                    </div>
                   </div>
                 </div>
                 <div ng-class="{ 'hidden': ! showEntree }">
@@ -103,7 +103,7 @@
                     </div>
                   </div>
                 </div>
-                <div ng-class="{ 'hidden': ! showSides }">  
+                <div ng-class="{ 'hidden': ! showSides }">
                   <h2>Sides</h2>
                   <div ng-repeat="x in item | filter: 'Sides' | orderBy:'name'">
                     <div ng-click="openPhotoSwipe(x.page)">
@@ -147,16 +147,16 @@
               <div class="col-sm-9 row-margin">
                 <div ng-click="openPhotoSwipe(0)">
                   <img src="img/cookbook/viewcookbook.jpg" class="img-responsive">
-                </div>  
-              </div> 
+                </div>
+              </div>
             </div>
-          </div>  
+          </div>
         </div>
         <!-- PhotoSwipe -->
       <!-- Root element of PhotoSwipe. Must have class pswp. -->
       <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
 
-          <!-- Background of PhotoSwipe. 
+          <!-- Background of PhotoSwipe.
                It's a separate element, as animating opacity is faster than rgba(). -->
           <div class="pswp__bg"></div>
 
@@ -200,7 +200,7 @@
                   </div>
 
                   <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
-                      <div class="pswp__share-tooltip"></div> 
+                      <div class="pswp__share-tooltip"></div>
                   </div>
 
                   <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
@@ -221,7 +221,7 @@
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
     <script src="js/cookbook.js"></script>
-    <script src="ps/photoswipe.js"></script> 
-    <script src="ps/photoswipe-ui-default.min.js"></script> 
+    <script src="ps/photoswipe.js"></script>
+    <script src="ps/photoswipe-ui-default.min.js"></script>
   </body>
 </html>

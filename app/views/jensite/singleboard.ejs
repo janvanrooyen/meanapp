@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="en" ng-app="jensite">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SINGLE BOARD MICROCONTROLLER</title>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/jensite.css" />
+    <%- include ../googletrack.ejs %>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-100827688-1"></script>
+
+  </head>
+    <body ng-controller="ShowHide">
+      <div ng-include="'/jensite/jennavigation'"></div>
+      <div class="container">
+        <div class="bg-singleboard"></div>
+        <div class="row">
+          <div class="col-md-5">
+            <div class="row">
+              <iframe width="420" height="315"src="https://www.youtube.com/embed/bKDxY-KfCcs"></iframe>
+            </div>
+          </div>
+          <div class="col-md-7">
+            <h1>Project Overview</h1>
+            <h3><p>
+              For the Single Board Microcontroller challenge, I chose to work with the CanaKit Raspberry Pi 3 Model B. The Raspberry Pi is described as “a low cost, credit-card sized computer that plugs into a computer monitor or TV and uses a standard keyboard and mouse.” (Raspberry Pi Foundation, n.d.-b, para. 1) Raspberry Pi is a tiny computer, with the abilities to carry out the same tasks as a laptop or desktop computer.
+            </p></h3>
+          </div>
+        </div>
+        <div class="row">
+          <ul class="list-group">
+            <!-- Section 2 -->
+            <div ng-click="showme2= !showme2">
+              <li class="list-group-item list-group-item-info">Standards / Objectives</li>
+            </div>
+            <div ng-click="showme2= !showme2">
+              <div class="row" ng-show="showme2">
+                <div class="col-md-8">
+                  <h4><p>Using the Raspberry Pi, I wanted to create a detection system for flooding that would alert me when water was present in my basement. This corresponds to the Nebraska College and Career Ready Standards for Science:</p>
+                  <br>
+                  <p><em>SC.HS.5.5.E Design a solution to a complex real-world problem by breaking it down into smaller, more manageable problems that can be solved through engineering.</em></p>
+                  <br>
+                  <u>Objectives:</u>
+                  <br>
+                  <p>Content— The students will create a solution to a real-world problem.</p>
+                  <br>
+                  <p>Language— Using Raspberry Pi with CanaKit groups of students will create a solution to the real-world problem of home security incorporating a sensor and an alarm component.</p>
+                  <br>
+                  <p>Student-friendly— I can create a detections system using a sensor and an alarm to protect my house from a natural disaster or intruder.</p>
+
+                </div>
+                <div class="col-md-4">
+                  <div ng-show="showme2">
+                    <img class="img-responsive" src="../img/jensite/robotics_8.jpg">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--Section 3 -->
+            <div ng-click="showme3= !showme3">
+              <li class="list-group-item list-group-item-info">Resources and Materials</li>
+            </div>
+            <div ng-click="showme3= !showme3">
+              <div ng-show="showme3">
+                <div class="row">
+                  <div class="col-md-8">
+                    <h4><p>The complex real-world problem that I strove to create a solution for was flooding in my basement; after the thawing of snow last spring, I experienced significant amount of water in my basement. I wanted to create a flood sensor that could detect water in my basement and then alert me. In order to build this system, I used a Raspberry Pi 3 Model B+ Ultimate Kit from CanaKit (CanaKit, n.d.). This kit is nice because it came with most of the supplies that I needed; including the CanaKit GPIO to Breadboard Interface Board, GPIO Ribbon Cable, Full-Size Large Breadboard, and multiple jumper wires, power adapter, microSD card, HDMI cable; all of which were necessary in the construction of my flood alarm (CanaKit, n.d.). In addition to these materials I also used a rain-water level sensor and Adafruit MCP3008 Analog to Digital Convertor (ADC). In order to get the Raspberry Pi to work I also had to have a computer screen, keyboard and mouse. Within the Raspberry Pi’s operating system, I used the Python coding language for programing of the water sensor (Amber, 2017; Rembor, n.d., Rototron, 2016). When the water sensor detects water, I used the website IFTTT
+                    </h4>
+                  </div>
+                  <div class="col-md-4">
+                    <img class="img-responsive" src="../img/jensite/singleboard_1.jpg">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="imagecentered">
+                      <img display="inline-block" class="img-responsive" src="../img/jensite/singleboard_2.jpg">
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="imagecentered">
+                      <img class="img-responsive" src="../img/jensite/singleboard_3.jpg">
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-8">
+                    <h4><p>The first thing I did was plug the Raspberry Pi into my computer monitor with keyboard and mouse. In order to run the Raspberry Pi, I had to first make sure that it was configured with the Raspbian Operating System and all the coding tools for Python. Next, I attached the breadboard to the Raspberry Pi using the GPIO ribbon cable. To the breadboard, I attached the ADC chip, water-level sensor using jumper wires following instructions and schematic diagrams on the Adafruit Python and CircuitPython website (Raspberry Pi Foundation, n.d.-a; Rembor, n.d.). After trial and many errors, I was able to put together a python script that detected water by returning a value greater than 0 if water was detected by the water-level sensor (Amber, 2017; Rembor, n.d., Rototron, 2016). My next step was to device an alarm when water was detected. I decided to send a push message to my phone. Utilizing google I found IFTTT (IF This Then That) and Webhooks website that explained how to write a code in python to send an email based on set criteria (IFTTT, n.d.). I set up a free account on IFTTT and followed the instructions to get and add a request code to my existing python script (IFTTT, n.d.). I ran a test by placing my water sensor in a small cup of water and about two minutes later I received an email stating water had been detected. </p></h4>
+                  </div>
+                  <div class="col-md-4">
+                    <img class="img-responsive" src="../img/jensite/singleboard_4.jpg">
+                    <img class="img-responsive" src="../img/jensite/singleboard_5.jpg">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Section 4 -->
+            <div ng-click="showme4= !showme4">
+              <li class="list-group-item list-group-item-info">Materials Budget List</li>
+            </div>
+            <div ng-click="showme4= !showme4">
+              <div ng-show="showme4">
+                <h4><p>In order to create the product that I have described above I have included a materials’ budget list. </p></h4>
+                <div class="imagecentered">
+                  <img class="img-responsive" src="../img/jensite/singleboard_6.jpg">
+                </div>
+              </div>
+            </div>
+            <!-- Section 5 -->
+            <div ng-click="showme5= !showme5">
+              <li class="list-group-item list-group-item-info">Engineering Design Process</li>
+            </div>
+            <div ng-click="showme5= !showme5">
+              <div ng-show="showme5">
+                <div class="row">
+                  <div class="col-md-8">
+                    <h4><p>
+                      <u>Ask:</u> What kind of detection system can I create to protect my house or belongings from a natural disaster or intruder. </p>
+                      <br>
+                      <p><u>Imagine:</u> Brainstorm as a group the type of natural disaster or intruder they want to detect. Then what kind of sensor and alarms they want to incorporate.</p>
+                      <br>
+                      <p><u>Plan:</u> Sketch a drawing or list the materials needed and Google search for similar wiring and coding projects.</p>
+                      <br>
+                      <p><u>Create:</u> Build and Code! Test each step along the way to ensure that it is working.</p>
+                      <br>
+                      <p><u>Improve:</u> Make necessary modifications along the way to the wiring and coding until it works. Internet searches will be critical to help with its functioning.</p>
+                    </h4>
+                  </div>
+                  <div class="col-md-4">
+                    <img class="img-responsive" src="../img/jensite/robotics_11.jpg">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Section 6 -->
+            <div ng-click="showme6= !showme6">
+              <li class="list-group-item list-group-item-info">Nebraska Steam Instruction Resource Evaluation Rubric</li>
+            </div>
+            <div ng-click="showme6= !showme6">
+              <div ng-show="showme6">
+                <div class="row">
+                  <div class="col-md-8">
+                    <h4>
+                      <p>This rubric is a guide for the development and evaluation of instructional resources with STEM activities to be incorporated in school-based, work-based, family-based, community-based learning environments. The purpose of this rubric is to promote rich opportunities for development of critical thinking, creativity, collaboration and communication (4C) skills through the use of quality, well-designed, and intentional instructional resources (Nebraska Department of Education, 2016).</p>
+                      <br>
+                      <p>How does the resource promote the understanding of concepts across content areas?<br>
+                      <em>Does Not Meet</em> - I feel this is a tool that could be used to supplement learning; it does not directly apply to a concept.</p>
+                      <br>
+                      <p>How does the resource promote the acquisition of proficiency toward a recognized, grade appropriate standard?<br>
+                      <em>Meets</em> - This tool could be used as a means of attaining several standards.</p>
+                      <br>
+                      <p>How does the resource give the learner first-hand experience?<br>
+                      <em>Models Excellence</em> - This tool will require groups to plan, design, and build products.</p>
+                      <br>
+                      <p>How does the resource promote critical thinking, creativity, collaboration and communication (4C) skills through STEM Skills in a school-based, work-based, family-based, or community-based application? Science: Engage in 3-dimensional learning to construct scientific understanding • Technology: Use and apply technology • Engineering: Use engineering design process • Mathematics: Solve and communicate problems using mathematics<br>
+                      <em>Models Excellence </em> - This tool would be effective at promoting the 4C skills using STEM.</p>
+                    </h4>
+                  </div>
+                  <div class="col-md-4">
+                    <img class="img-responsive" src="../img/jensite/robotics_12.jpg">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Section 7 -->
+            <div ng-click="showme7= !showme7">
+              <li class="list-group-item list-group-item-info">References</li>
+            </div>
+            <div ng-click="showme7= !showme7">
+              <div ng-show="showme7">
+                <p>Amber. (2017, June 1). <em>Design a water level detector through a raspberry pi board and water level sensor.</em> Kookye. Retrieved from <a href="http://kookye.com/2017/06/01/design-a-water-level-detector-through-a-raspberry-pi-board-and-water-level-sensor/">http://kookye.com/2017/06/01/design-a-water-level-detector-through-a-raspberry-pi-board-and-water-level-sensor/</a></p>
+                <br>
+                <p>CanaKit. (n.d.).<em>Raspberry Pi 3 Model B+ Ultimate Kit.</em>Retrieved from <a href="https://www.canakit.com/raspberry-pi-3-model-b-plus-ultimate-kit.html">https://www.canakit.com/raspberry-pi-3-model-b-plus-ultimate-kit.html</a></p>
+                <br>
+                <p>IFTTT. (n.d.). <em>Webhooks</em>. Retrieved from <a href=" https://ifttt.com/maker_webhooks">https://ifttt.com/maker_webhooks</a></p>
+                <br>
+                <p>Nebraska Department of Education. (2016). <em>Nebraska STEM Instructional Resource Evaluation Rubric</em>. Retrieved from <a href="https://unomaha.az1.qualtrics.com/jfe/form/SV_0jJSoOmsXBPd7w1">https://unomaha.az1.qualtrics.com/jfe/form/SV_0jJSoOmsXBPd7w1</a></p>
+                <br>
+                <p>Nebraska Department of Education. (2017). <em>Nebraska’s College and Career Ready Standards for Science[PDF]</em>. Retrieved from <a href="https://cdn.education.ne.gov/wp-content/uploads/2017/10/Nebraska_Science_Standards_Final_10_23.pdf">https://cdn.education.ne.gov/wp-content/uploads/2017/10/Nebraska_Science_Standards_Final_10_23.pdf</a></p>
+                <br>
+                <p>Raspberry Pi Foundation. (n.d.-a). <em>GPIO</em>. Retrieved from <a href="https://www.raspberrypi.org/documentation/usage/gpio/">https://www.raspberrypi.org/documentation/usage/gpio/</a></p>
+                <br>
+                <p>Raspberry Pi Foundation. (n.d.-b). <em>What is a raspberry pi?</em> <a href="https://www.raspberrypi.org/help/what-%20is-a-raspberry-pi/">https://www.raspberrypi.org/help/what-%20is-a-raspberry-pi/</a></p>
+                <br>
+                <p>Raspbian. (n.d.). <em>Welcome to Raspbian.</em>
+                <a href="https://www.raspbian.org/">https://www.raspbian.org/</a></p>
+                <br>
+                <p>Rembor, Kattni. (n.d.). <em>Python & CircuitPython. Adafruit.</em> Retrieved from  <a href="https://learn.adafruit.com/mcp3008-spi-adc/python-circuitpython">https://learn.adafruit.com/mcp3008-spi-adc/python-circuitpython</a></p>
+                <br>
+                <p>Rototron. (2016, October 11). <em>Raspberry Pi Analog Water Sensor Tutorial</em>. Retrieved from <a href="https://www.rototron.info/raspberry-pi-analog-water-sensor-tutorial">https://www.rototron.info/raspberry-pi-analog-water-sensor-tutorial/</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+ <!--   <script src="js/vendor/what-input.min.js"></script> -->
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+    <script src="../js/jensite.js"></script>
+  </body>
+</html>
