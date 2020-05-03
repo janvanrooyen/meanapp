@@ -19,7 +19,7 @@
     "connect": "^3.4.0",
     "ejs": "^2.3.4",
     "express": "^4.13.3",
-    "mongoose": "^4.4.12",
+    "mongoose": "^5.9.11",
     "photoswipe": "^4.1.1"
   }
 }
